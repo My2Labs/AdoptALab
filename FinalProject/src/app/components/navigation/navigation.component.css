@@ -79,5 +79,6 @@ span {
 }
 
 .banner {
-  width: 100px;
+  margin: 0;
+  padding: 0;
 }
