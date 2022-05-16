@@ -6,13 +6,27 @@ import { AppComponent } from './app.component';
 import { HeadComponent } from './components/head/head.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
+import { MaingridsectionsComponent } from './components/maingridsections/maingridsections.component';
+import { PuppypicturesComponent } from './components/puppypictures/puppypictures.component';
+import { ActionpicturesComponent } from './components/actionpictures/actionpictures.component';
+import { VideosComponent } from './components/videos/videos.component';
+import { FunnypicturesComponent } from './components/funnypictures/funnypictures.component';
+import { WaterpicturesComponent } from './components/waterpictures/waterpictures.component';
+import { CampingpicturesComponent } from './components/campingpictures/campingpictures.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadComponent,
     NavigationComponent,
-    MainpageComponent
+    MainpageComponent,
+    MaingridsectionsComponent,
+    PuppypicturesComponent,
+    ActionpicturesComponent,
+    VideosComponent,
+    FunnypicturesComponent,
+    WaterpicturesComponent,
+    CampingpicturesComponent
   ],
   imports: [
     BrowserModule,
