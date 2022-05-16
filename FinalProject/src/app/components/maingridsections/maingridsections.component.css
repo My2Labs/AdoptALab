@@ -29,9 +29,10 @@ img {
   grid-template-columns: 5% 30% 30% 30% 5%;
   justify-items: center;
   align-items: center;
-  background-color: silver;
+  background-color: #d7c6bc;
   padding: 10px;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .grid1 {
@@ -62,4 +63,8 @@ img {
 .grid6 {
   grid-row: 2 / span 1;
   grid-column: 4 / span 1;
+}
+
+a {
+  text-decoration: none;
 }
