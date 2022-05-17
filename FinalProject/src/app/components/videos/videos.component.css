@@ -5,8 +5,9 @@
 }
 
 h2 {
-  font-family: 'Italianno', cursive;
-  font-size: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color: rgb(107, 107, 107);
   text-align: center;
   padding-top: 2rem;
   margin-top: 2rem;
