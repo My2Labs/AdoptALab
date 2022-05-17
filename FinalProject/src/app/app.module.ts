@@ -19,6 +19,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PupsleepComponent } from './components/pupsleep/pupsleep.component';
+import { PortraitsComponent } from './components/portraits/portraits.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PupsleepComponent } from './components/pupsleep/pupsleep.component';
     CampingpicturesComponent,
     MainsectionComponent,
     PupsleepComponent,
+    PortraitsComponent,
   ],
   imports: [
     BrowserModule,
