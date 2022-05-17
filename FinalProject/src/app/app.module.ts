@@ -13,6 +13,7 @@ import { VideosComponent } from './components/videos/videos.component';
 import { FunnypicturesComponent } from './components/funnypictures/funnypictures.component';
 import { WaterpicturesComponent } from './components/waterpictures/waterpictures.component';
 import { CampingpicturesComponent } from './components/campingpictures/campingpictures.component';
+import { MainsectionComponent } from './components/mainsection/mainsection.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +27,11 @@ import { CampingpicturesComponent } from './components/campingpictures/campingpi
     VideosComponent,
     FunnypicturesComponent,
     WaterpicturesComponent,
-    CampingpicturesComponent
+    CampingpicturesComponent,
+    MainsectionComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

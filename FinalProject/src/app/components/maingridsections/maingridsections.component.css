@@ -29,7 +29,7 @@ img {
   grid-template-columns: 5% 30% 30% 30% 5%;
   justify-items: center;
   align-items: center;
-  background-color: #d8baa6;
+  background-color: #333333;
   padding: 10px;
   gap: 10px;
   margin-top: 20px;
@@ -67,8 +67,4 @@ img {
 
 a {
   text-decoration: none;
-}
-
-.mat-form-field+.mat-form-field {
-  margin-left: 8px;
 }
