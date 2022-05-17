@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeadComponent } from './components/head/head.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
-import { MaingridsectionsComponent } from './components/maingridsections/maingridsections.component';
 import { PuppypicturesComponent } from './components/puppypictures/puppypictures.component';
 import { ActionpicturesComponent } from './components/actionpictures/actionpictures.component';
 import { VideosComponent } from './components/videos/videos.component';
@@ -19,6 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PupsleepComponent } from './components/pupsleep/pupsleep.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeadComponent,
     NavigationComponent,
     MainpageComponent,
-    MaingridsectionsComponent,
     PuppypicturesComponent,
     ActionpicturesComponent,
     VideosComponent,
@@ -34,6 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     WaterpicturesComponent,
     CampingpicturesComponent,
     MainsectionComponent,
+    PupsleepComponent,
   ],
   imports: [
     BrowserModule,

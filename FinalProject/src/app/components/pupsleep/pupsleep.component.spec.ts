@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MaingridsectionsComponent } from './maingridsections.component';
+import { PupsleepComponent } from './pupsleep.component';
 
-describe('MaingridsectionsComponent', () => {
-  let component: MaingridsectionsComponent;
-  let fixture: ComponentFixture<MaingridsectionsComponent>;
+describe('PupsleepComponent', () => {
+  let component: PupsleepComponent;
+  let fixture: ComponentFixture<PupsleepComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MaingridsectionsComponent ]
+      declarations: [ PupsleepComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MaingridsectionsComponent);
+    fixture = TestBed.createComponent(PupsleepComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

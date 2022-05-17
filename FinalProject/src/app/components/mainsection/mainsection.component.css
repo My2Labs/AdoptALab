@@ -5,13 +5,17 @@
 mat-expansion-panel {
   display: inline-block;
   text-align: center;
+  height: auto;
 }
 
 mat-expansion-panel-header {
-  height: 25rem;
+  height: auto;
   background-color: #bebebe;
   border: 4px solid white;
+  margin: 2em;
+
 }
+
 
 
 p {
@@ -27,28 +31,39 @@ p {
   padding-right: 20px;
 }
 
+mat-panel-description>img {
+  width: 50%;
+  padding: 30px;
+
+}
+
 img {
   display: flex;
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  filter: saturate(150%);
   border: 2px solid rgba(0, 0, 0, 0.555);
   background-color: rgb(247, 244, 241);
   border-radius: 12px;
 }
 
+mat-panel-description>div {
+  width: 40%;
+}
+
 .gridlayout1 {
   display: grid;
-  grid-template-rows: 15em, 15em, 15em;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 15em, 15em, 15em, 15em, 15em, 15em;
+  grid-template-columns: 45%, 45%;
   justify-items: center;
   align-items: center;
   background-color: #333333;
-  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   gap: 10px;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .grid1 {
@@ -62,23 +77,23 @@ img {
 }
 
 .grid3 {
-  grid-row: 1 / span 1;
-  grid-column: 3 / span 1;
-}
-
-.grid4 {
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
 }
 
-.grid5 {
+.grid4 {
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
 }
 
+.grid5 {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+}
+
 .grid6 {
-  grid-row: 2 / span 1;
-  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
 }
 
 a {
