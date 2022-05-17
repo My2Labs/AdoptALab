@@ -63,6 +63,7 @@ div {
 
 p>a:link {
   text-transform: lowercase;
+  color: white;
 }
 
 a:visited {
@@ -154,7 +155,6 @@ img {
 
 .cover {
   display: block;
-  align: center;
   color: rgb(71, 69, 69);
   text-align: center;
   position: absolute;
@@ -327,33 +327,10 @@ img {
   text-align: center;
 }
 
-.jetgif {
-  display: block;
-  position: absolute;
-  padding: 10px;
-  margin-left: 50%;
-  margin-right: auto;
-  margin-top: 57px;
-  width: 270px;
-  border: none;
-  background-color: transparent;
-  filter: none;
-  padding-top: 4em;
-}
-
-.cloudgif {
-  display: block;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 270px;
-  border: none;
-  background-color: transparent;
-  filter: none;
-  padding-top: 4em;
-}
-
 .video {
   text-align: center;
+}
+
+.mat-form-field+.mat-form-field {
+  margin-left: 8px;
 }

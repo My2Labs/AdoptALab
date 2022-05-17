@@ -14,6 +14,11 @@ import { FunnypicturesComponent } from './components/funnypictures/funnypictures
 import { WaterpicturesComponent } from './components/waterpictures/waterpictures.component';
 import { CampingpicturesComponent } from './components/campingpictures/campingpictures.component';
 import { MainsectionComponent } from './components/mainsection/mainsection.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,15 @@ import { MainsectionComponent } from './components/mainsection/mainsection.compo
     CampingpicturesComponent,
     MainsectionComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatExpansionModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
