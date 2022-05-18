@@ -24,21 +24,21 @@ export const photos = [
     imageUrl: '/assets/pupaction5.jpg',
     label: 'Action',
   },
-  // {
-  //   id: 6,
-  //   imageUrl: '/assets/pupaction6.jpg',
-  //   label: 'Action',
-  // },
-  // {
-  //   id: 7,
-  //   imageUrl: '/assets/pupaction7.jpg',
-  //   label: 'Action',
-  // },
-  // {
-  //   id: 8,
-  //   imageUrl: '/assets/pupaction8.jpg',
-  //   label: 'Action',
-  // },
+  {
+    id: 6,
+    imageUrl: '/assets/pupaction6.jpg',
+    label: 'Action',
+  },
+  {
+    id: 7,
+    imageUrl: '/assets/pupaction7.jpg',
+    label: 'Action',
+  },
+  {
+    id: 8,
+    imageUrl: '/assets/pupaction8.jpg',
+    label: 'Action',
+  },
   {
     id: 9,
     imageUrl: '/assets/pupaction9.jpg',
@@ -164,16 +164,16 @@ export const photos = [
     imageUrl: '/assets/pupcamp17.jpg',
     label: 'Camping',
   },
-  // {
-  //   id: 34,
-  //   imageUrl: '/assets/pupcamp18.jpg',
-  //   label: 'Camping',
-  // },
-  // {
-  //   id: 35,
-  //   imageUrl: '/assets/pupcamp19.jpg',
-  //   label: 'Camping',
-  // },
+  {
+    id: 34,
+    imageUrl: '/assets/pupcamp18.jpg',
+    label: 'Camping',
+  },
+  {
+    id: 35,
+    imageUrl: '/assets/pupcamp19.jpg',
+    label: 'Camping',
+  },
   {
     id: 36,
     imageUrl: '/assets/pupfun1.jpg',
