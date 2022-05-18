@@ -1,7 +1,11 @@
 .embed-video {
-  width: 100%;
+  width: 45%;
   border: 2px solid white;
   height: 30rem;
+}
+
+.video {
+  text-align: center;
 }
 
 h2 {

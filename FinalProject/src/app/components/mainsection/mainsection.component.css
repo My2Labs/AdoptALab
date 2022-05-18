@@ -53,8 +53,8 @@ mat-panel-description>div {
 
 .gridlayout1 {
   display: grid;
-  grid-template-rows: 15em, 15em, 15em;
-  grid-template-columns: 33%, 33%, 33%;
+  grid-template-rows: 15em, 15em, 15em, 15em, 15em, 15em;
+  grid-template-columns: 90%;
   justify-items: center;
   align-items: center;
   background-color: #333333;
@@ -71,28 +71,28 @@ mat-panel-description>div {
 }
 
 .grid2 {
-  grid-row: 1 / span 1;
-  grid-column: 2 / span 1;
-}
-
-.grid3 {
-  grid-row: 1 / span 1;
-  grid-column: 3 / span 1;
-}
-
-.grid4 {
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
 }
 
+.grid3 {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.grid4 {
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 1;
+}
+
 .grid5 {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+  grid-column: 1 / span 1;
 }
 
 .grid6 {
-  grid-row: 2 / span 1;
-  grid-column: 3 / span 1;
+  grid-row: 6 / span 1;
+  grid-column: 1 / span 1;
 }
 
 a {

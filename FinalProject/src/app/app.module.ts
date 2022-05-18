@@ -20,6 +20,8 @@ import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PupsleepComponent } from './components/pupsleep/pupsleep.component';
 import { PortraitsComponent } from './components/portraits/portraits.component';
+import { SlideshowComponent } from './components/slideshow/slideshow.component';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { PortraitsComponent } from './components/portraits/portraits.component';
     MainsectionComponent,
     PupsleepComponent,
     PortraitsComponent,
+    SlideshowComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { PortraitsComponent } from './components/portraits/portraits.component';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    MdbCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
