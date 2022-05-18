@@ -1,13 +1,10 @@
 
 <div class="photocarousel">
-<!-- <mdb-carousel>
-  <mdb-carousel-item>
-    <img
-      src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-      class="d-block w-100"
-      alt="..."
-    />
-  </mdb-carousel-item>
-
-</mdb-carousel> -->
+  <ul>
+    <li *ngFor="let photo of photos">
+      <div class="photocarousel">
+        <img src={{photo.imageUrl}} alt={{photo.label}} />
+      </div>
+    </li>
+  </ul>
 </div>
