@@ -1,5 +1,155 @@
 export const photos = [
   {
+    id: 50,
+    imageUrl: '/assets/pupportrait1.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 51,
+    imageUrl: '/assets/pupportrait2.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 52,
+    imageUrl: '/assets/pupportrait3.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 53,
+    imageUrl: '/assets/pupportrait4.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 54,
+    imageUrl: '/assets/pupportrait5.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 55,
+    imageUrl: '/assets/pupportrait6.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 56,
+    imageUrl: '/assets/pupportrait7.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 57,
+    imageUrl: '/assets/pupportrait8.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 58,
+    imageUrl: '/assets/pupportrait9.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 59,
+    imageUrl: '/assets/pupportrait10.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 60,
+    imageUrl: '/assets/pupportrait11.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 61,
+    imageUrl: '/assets/pupportrait12.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 62,
+    imageUrl: '/assets/pupportrait13.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 63,
+    imageUrl: '/assets/pupportrait14.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 64,
+    imageUrl: '/assets/puppy1.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 65,
+    imageUrl: '/assets/puppy2.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 66,
+    imageUrl: '/assets/puppy3.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 67,
+    imageUrl: '/assets/puppy4.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 68,
+    imageUrl: '/assets/puppy5.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 69,
+    imageUrl: '/assets/puppy6.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 70,
+    imageUrl: '/assets/puppy7.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 71,
+    imageUrl: '/assets/puppy8.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 72,
+    imageUrl: '/assets/puppy9.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 73,
+    imageUrl: '/assets/puppy10.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 74,
+    imageUrl: '/assets/puppy11.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 75,
+    imageUrl: '/assets/puppy12.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 76,
+    imageUrl: '/assets/puppy13.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 77,
+    imageUrl: '/assets/puppy14.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 78,
+    imageUrl: '/assets/puppy15.jpg',
+    label: 'Puppy',
+  },
+  {
+    id: 79,
+    imageUrl: '/assets/puppy16.jpg',
+    label: 'Puppy',
+  },
+  {
     id: 1,
     imageUrl: '/assets/pupaction1.jpg',
     label: 'Action',
@@ -243,156 +393,6 @@ export const photos = [
     id: 49,
     imageUrl: '/assets/pupfun14.jpg',
     label: 'Funny',
-  },
-  {
-    id: 50,
-    imageUrl: '/assets/pupportrait1.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 51,
-    imageUrl: '/assets/pupportrait2.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 52,
-    imageUrl: '/assets/pupportrait3.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 53,
-    imageUrl: '/assets/pupportrait4.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 54,
-    imageUrl: '/assets/pupportrait5.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 55,
-    imageUrl: '/assets/pupportrait6.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 56,
-    imageUrl: '/assets/pupportrait7.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 57,
-    imageUrl: '/assets/pupportrait8.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 58,
-    imageUrl: '/assets/pupportrait9.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 59,
-    imageUrl: '/assets/pupportrait10.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 60,
-    imageUrl: '/assets/pupportrait11.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 61,
-    imageUrl: '/assets/pupportrait12.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 62,
-    imageUrl: '/assets/pupportrait13.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 63,
-    imageUrl: '/assets/pupportrait14.jpg',
-    label: 'Portrait',
-  },
-  {
-    id: 64,
-    imageUrl: '/assets/puppy1.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 65,
-    imageUrl: '/assets/puppy2.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 66,
-    imageUrl: '/assets/puppy3.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 67,
-    imageUrl: '/assets/puppy4.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 68,
-    imageUrl: '/assets/puppy5.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 69,
-    imageUrl: '/assets/puppy6.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 70,
-    imageUrl: '/assets/puppy7.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 71,
-    imageUrl: '/assets/puppy8.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 72,
-    imageUrl: '/assets/puppy9.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 73,
-    imageUrl: '/assets/puppy10.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 74,
-    imageUrl: '/assets/puppy11.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 75,
-    imageUrl: '/assets/puppy12.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 76,
-    imageUrl: '/assets/puppy13.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 77,
-    imageUrl: '/assets/puppy14.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 78,
-    imageUrl: '/assets/puppy15.jpg',
-    label: 'Puppy',
-  },
-  {
-    id: 79,
-    imageUrl: '/assets/puppy16.jpg',
-    label: 'Puppy',
   },
   {
     id: 80,

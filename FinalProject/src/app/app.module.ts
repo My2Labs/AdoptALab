@@ -22,6 +22,9 @@ import { PupsleepComponent } from './components/pupsleep/pupsleep.component';
 import { PortraitsComponent } from './components/portraits/portraits.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { GalleryModule } from 'ng-gallery';
+import { GALLERY_CONFIG } from 'ng-gallery';
 
 @NgModule({
   declarations: [
@@ -49,8 +52,18 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
     MatFormFieldModule,
     MatInputModule,
     MdbCarouselModule,
+    MatPaginatorModule,
+    GalleryModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: GALLERY_CONFIG,
+      useValue: {
+        dots: true,
+        imageSize: 'cover',
+      },
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
