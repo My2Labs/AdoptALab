@@ -1,5 +1,16 @@
 .photocarousel {
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 16px;
+}
+
+.photocarousel ul {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto
+}
+
+li, img {
+  padding: 15px;
 }
