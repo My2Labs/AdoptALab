@@ -53,7 +53,7 @@ mat-panel-description>div {
 
 .gridlayout1 {
   display: grid;
-  grid-template-rows: 15em, 15em, 15em, 15em, 15em, 15em;
+  grid-template-rows: 15em;
   grid-template-columns: 90%;
   justify-items: center;
   align-items: center;
@@ -65,35 +65,19 @@ mat-panel-description>div {
   justify-content: center;
 }
 
-.grid1 {
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
+.layout {
+  display: flexbox;
+  background-color: #333333;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 10px;
+  margin-top: 100px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
-.grid2 {
-  grid-row: 2 / span 1;
-  grid-column: 1 / span 1;
-}
-
-.grid3 {
-  grid-row: 3 / span 1;
-  grid-column: 1 / span 1;
-}
-
-.grid4 {
-  grid-row: 4 / span 1;
-  grid-column: 1 / span 1;
-}
-
-.grid5 {
-  grid-row: 5 / span 1;
-  grid-column: 1 / span 1;
-}
-
-.grid6 {
-  grid-row: 6 / span 1;
-  grid-column: 1 / span 1;
-}
 
 a {
   text-decoration: none;
