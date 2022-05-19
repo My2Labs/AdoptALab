@@ -261,8 +261,8 @@ export const IMAGES = [
   },
   {
     id: 53,
-    imageUrl: '/assets/pupsleep25.jpg',
-    label: 'Sleeping',
+    imageUrl: '/assets/pupwater14.jpg',
+    label: 'Water',
   },
   {
     id: 54,
@@ -362,11 +362,6 @@ export const IMAGES = [
   {
     id: 73,
     imageUrl: '/assets/pupwater13.jpg',
-    label: 'Water',
-  },
-  {
-    id: 74,
-    imageUrl: '/assets/pupwater14.jpg',
     label: 'Water',
   },
 ];
