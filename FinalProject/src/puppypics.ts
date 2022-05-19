@@ -294,4 +294,14 @@ export const PHOTOS = [
     imageUrl: '/assets/pupmisc3.jpg',
     label: 'Misc',
   },
+  {
+    id: 60,
+    imageUrl: '/assets/pupportrait7.jpg',
+    label: 'Portrait',
+  },
+  {
+    id: 61,
+    imageUrl: '/assets/pupportrait12.jpg',
+    label: 'Portrait',
+  },
 ];

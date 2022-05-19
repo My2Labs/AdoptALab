@@ -26,8 +26,8 @@ export const IMAGES = [
   },
   {
     id: 6,
-    imageUrl: '/assets/pupportrait7.jpg',
-    label: 'Portrait',
+    imageUrl: '/assets/pupwater13.jpg',
+    label: 'Water',
   },
   {
     id: 7,
@@ -41,8 +41,8 @@ export const IMAGES = [
   },
   {
     id: 9,
-    imageUrl: '/assets/pupportrait12.jpg',
-    label: 'Portrait',
+    imageUrl: '/assets/pupwater12.jpg',
+    label: 'Water',
   },
   {
     id: 10,
@@ -352,16 +352,6 @@ export const IMAGES = [
   {
     id: 71,
     imageUrl: '/assets/pupwater11.jpg',
-    label: 'Water',
-  },
-  {
-    id: 72,
-    imageUrl: '/assets/pupwater12.jpg',
-    label: 'Water',
-  },
-  {
-    id: 73,
-    imageUrl: '/assets/pupwater13.jpg',
     label: 'Water',
   },
 ];
