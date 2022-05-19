@@ -2,7 +2,7 @@
   overflow: hidden;
   /* background-color: #333333; */
   background-image: url("../../../assets/pawprints.png");
-  background-size: 1000px 100px;
+  background-size: 500px 100px;
   background-repeat: repeat;
   font-family: Arial;
   height: 100px;
@@ -27,9 +27,9 @@
   font-weight: 900;
   border: none;
   outline: none;
-  color: rgb(255, 0, 13);
-  padding: 10px 10px;
-  background-color: inherit;
+  color: white;
+  height: 100%;
+  background-color: gray;
   font-family: inherit;
   margin: 0;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;

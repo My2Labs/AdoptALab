@@ -46,3 +46,9 @@ a {
 input, max-step {
   width: 200px;
 }
+
+.sign-up {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -31,7 +31,7 @@ export class SlideshowComponent implements OnInit {
     IMAGES.forEach((item) => {
       this.images = [
         ...this.images,
-        new ImageItem({ src: 'item.imageUrl', thumb: 'item.imageUrl' }),
+        new ImageItem({ src: item.imageUrl, thumb: item.imageUrl }),
       ];
     });
   }

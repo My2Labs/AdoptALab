@@ -23,6 +23,7 @@ import { CoverphotoComponent } from './components/coverphoto/coverphoto.componen
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FooterdataComponent } from './components/footerdata/footerdata.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     PortraitsComponent,
     SlideshowComponent,
     CoverphotoComponent,
+    FooterdataComponent,
   ],
   imports: [
     BrowserModule,
