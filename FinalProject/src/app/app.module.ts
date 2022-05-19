@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadComponent } from './components/head/head.component';
@@ -19,6 +18,8 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { GalleryModule } from 'ng-gallery';
 import { GALLERY_CONFIG } from 'ng-gallery';
+import { MatDividerModule } from '@angular/material/divider';
+import { CoverphotoComponent } from './components/coverphoto/coverphoto.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { GALLERY_CONFIG } from 'ng-gallery';
     MainsectionComponent,
     PortraitsComponent,
     SlideshowComponent,
+    CoverphotoComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +44,7 @@ import { GALLERY_CONFIG } from 'ng-gallery';
     MdbCarouselModule,
     MatPaginatorModule,
     GalleryModule,
+    MatDividerModule,
   ],
   providers: [
     {

@@ -1,7 +1,9 @@
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #333333;
   font-family: Arial;
+  height: 100px;
+  padding: 0;
 }
 
 .navbar a {
@@ -43,11 +45,12 @@
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: white;
   padding: 14px 14px;
   text-decoration: none;
   display: block;
   text-align: left;
+  font-weight: 900;
 }
 
 .dropdown-content a:hover {
@@ -75,7 +78,7 @@ span {
 }
 
 .icon {
-  width: 75px;
+  width: 50px;
   margin: 0;
   padding: 0;
 }
