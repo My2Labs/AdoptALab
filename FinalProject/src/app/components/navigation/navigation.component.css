@@ -1,6 +1,9 @@
 .navbar {
   overflow: hidden;
-  background-color: #333333;
+  /* background-color: #333333; */
+  background-image: url("../../../assets/pawprints.png");
+  background-size: 1000px 100px;
+  background-repeat: repeat;
   font-family: Arial;
   height: 100px;
   padding: 0;
@@ -12,6 +15,7 @@
   text-align: center;
   padding: 12px 12px;
   text-decoration: none;
+  margin-left: 20px;
 }
 
 .dropdown {
@@ -20,13 +24,15 @@
 
 .dropdown .dropbtn {
   font-size: 16px;
+  font-weight: 900;
   border: none;
   outline: none;
-  color: white;
+  color: rgb(255, 0, 13);
   padding: 10px 10px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .navbar a:hover,
