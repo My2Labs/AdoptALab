@@ -4,14 +4,53 @@
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
-          <p>Portraits</p>
+          <p>Newsletter</p>
         </mat-panel-title>
         <mat-panel-description>
-          <p>Pictures of the puppies</p>
+          <p>Newsletter Sample</p>
         </mat-panel-description>
       </mat-expansion-panel-header>
-     <a href="../pictures/portraits.component.html"><app-portraits></app-portraits></a>
     </mat-expansion-panel>
 </div>
 
 
+<div>
+  <p>Sign Up For Our Newsletter!</p>
+  <mat-stepper orientation="vertical" linear>
+    <mat-step>Enter your name.
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter First Name</mat-label>
+          <input matInput placeholder="FirstName" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Last Name</mat-label>
+          <input matInput placeholder="LastName" required>
+        </mat-form-field>
+      </p>
+    </mat-step>
+
+    <mat-step>Enter your email address.
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Email Address</mat-label>
+          <input matInput placeholder="pat@example.com"  required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </p>
+    </mat-step>
+    <mat-step>Select Frequency of Newsletter
+    <mat-form-field appearance="fill">
+      <mat-label>Select Frequency of Newsletter</mat-label>
+      <mat-select>
+        <mat-option value="one">Daily</mat-option>
+        <mat-option value="two">Weekly</mat-option>
+        <mat-option value="three">Monthly</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-step>
+    <mat-step>Accept the terms and conditions.
+      <mat-checkbox class="example-margin" required>Review our Terms and Conditions</mat-checkbox>
+    </mat-step>
+  </mat-stepper>
+</div>

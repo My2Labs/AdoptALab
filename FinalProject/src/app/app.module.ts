@@ -20,6 +20,9 @@ import { GalleryModule } from 'ng-gallery';
 import { GALLERY_CONFIG } from 'ng-gallery';
 import { MatDividerModule } from '@angular/material/divider';
 import { CoverphotoComponent } from './components/coverphoto/coverphoto.component';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,9 @@ import { CoverphotoComponent } from './components/coverphoto/coverphoto.componen
     MatPaginatorModule,
     GalleryModule,
     MatDividerModule,
+    MatStepperModule,
+    MatSelectModule,
+    MatCheckboxModule,
   ],
   providers: [
     {
