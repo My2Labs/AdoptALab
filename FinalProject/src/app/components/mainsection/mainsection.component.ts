@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
+type SubscribeData = {
+  firstName: string;
+  lastName: string;
+  email: string;
+};
+
 @Component({
   selector: 'app-mainsection',
   templateUrl: './mainsection.component.html',
@@ -14,6 +20,10 @@ export class MainsectionComponent {
     }
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
+  }
+
+  subscribe({ firstName, lastName, email }: SubscribeData) {
+    console.log(firstName, lastName, email);
   }
 }
 

@@ -14,44 +14,33 @@
     </mat-expansion-panel>
 </div>
 
-
-<div class="sign-up">
+<div>
+<form #loginForm="ngForm" (ngSubmit)="subscribe(loginForm.value)">
   <p>Sign Up For Our Newsletter!</p>
-  <mat-stepper orientation="vertical" linear>
-    <mat-step>Enter your name.
-      <p>
-        <mat-form-field appearance="fill">
-          <mat-label>Enter First Name</mat-label>
-          <input matInput placeholder="FirstName" required>
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-          <mat-label>Enter Last Name</mat-label>
-          <input matInput placeholder="LastName" required>
-        </mat-form-field>
-      </p>
-    </mat-step>
-
-    <mat-step>Enter your email address.
-      <p>
-        <mat-form-field appearance="fill">
-          <mat-label>Enter Email Address</mat-label>
-          <input matInput placeholder="pat@example.com"  required>
-          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-        </mat-form-field>
-      </p>
-    </mat-step>
-    <mat-step>Select Frequency of Newsletter
-    <mat-form-field appearance="fill">
-      <mat-label>Select Frequency of Newsletter</mat-label>
-      <mat-select>
-        <mat-option value="one">Daily</mat-option>
-        <mat-option value="two">Weekly</mat-option>
-        <mat-option value="three">Monthly</mat-option>
-      </mat-select>
-    </mat-form-field>
-  </mat-step>
-    <mat-step>Accept the terms and conditions.
-      <mat-checkbox class="example-margin" required>Review our Terms and Conditions</mat-checkbox>
-    </mat-step>
-  </mat-stepper>
+  <p>
+    <label for="firstName">First Name: </label>
+    <input ng-required="true" ngModel id="firstName" name="firstName" required/>
+  </p>
+  <p>
+    <label for="lastName">First Name: </label>
+    <input ng-required="lastName" ngModel id="lasstName" name="lastName" required/>
+  </p>
+  <p>
+    <label for="email">Email Address: </label>
+    <input ngModel type="email" id="email" name="email" required/>
+  </p>
+  <div class="frequency">
+    <p class="formp">How often would you like to receive an update sent to your email?</p>
+    <input type="radio" id="daily" name="frequency" value="daily" required/>
+    <label for="daily">Daily</label>
+    <input type="radio" id="weekly" name="frequency" value="weekly" />
+    <label for="weekly">Weekly</label>
+    <input type="radio" id="monthly" name="frequency" value="monthly" />
+    <label for="monthly">Monthly</label>
+  </div>
+  <p>
+  <input type="submit" value="Subscribe">
+  </p>
+</form>
 </div>
+

@@ -24,6 +24,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FooterdataComponent } from './components/footerdata/footerdata.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { FooterdataComponent } from './components/footerdata/footerdata.componen
     MatStepperModule,
     MatSelectModule,
     MatCheckboxModule,
+    FormsModule,
   ],
   providers: [
     {
