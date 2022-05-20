@@ -13,6 +13,7 @@ type SubscribeData = {
   styleUrls: ['./mainsection.component.css'],
 })
 export class MainsectionComponent {
+  firstName = new FormControl('', [Validators.required]);
   email = new FormControl('', [Validators.required, Validators.email]);
   getErrorMessage() {
     if (this.email.hasError('required')) {

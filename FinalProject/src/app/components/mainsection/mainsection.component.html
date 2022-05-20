@@ -13,34 +13,23 @@
 
     </mat-expansion-panel>
 </div>
-
-<div>
+<div class="formlayout">
+<div class="form">
 <form #loginForm="ngForm" (ngSubmit)="subscribe(loginForm.value)">
-  <p>Sign Up For Our Newsletter!</p>
-  <p>
+  <p class="top">Sign Up For Our Newsletter!</p>
+  <p class="first-name">
     <label for="firstName">First Name: </label>
     <input ng-required="true" ngModel id="firstName" name="firstName" required/>
   </p>
-  <p>
-    <label for="lastName">First Name: </label>
+  <p class="last-name">
+    <label for="lastName">Last Name: </label>
     <input ng-required="lastName" ngModel id="lasstName" name="lastName" required/>
   </p>
-  <p>
+  <p class="email-input">
     <label for="email">Email Address: </label>
     <input ngModel type="email" id="email" name="email" required/>
   </p>
-  <div class="frequency">
-    <p class="formp">How often would you like to receive an update sent to your email?</p>
-    <input type="radio" id="daily" name="frequency" value="daily" required/>
-    <label for="daily">Daily</label>
-    <input type="radio" id="weekly" name="frequency" value="weekly" />
-    <label for="weekly">Weekly</label>
-    <input type="radio" id="monthly" name="frequency" value="monthly" />
-    <label for="monthly">Monthly</label>
-  </div>
-  <p>
-  <input type="submit" value="Subscribe">
-  </p>
+  <input [disabled]="!loginForm.valid" type="submit" value="Subscribe" />
 </form>
 </div>
-
+</div>

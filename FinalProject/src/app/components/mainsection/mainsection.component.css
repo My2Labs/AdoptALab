@@ -15,29 +15,25 @@ mat-expansion-panel-header {
 
 }
 
-
-div {
-  text-align: center;
+.formlayout {
+  display: flex;
+  justify-content: center;
   padding-bottom: 200px;
+  padding-top: 100px;
 }
 
-p {
+p, div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  color: gray;
+  font-size: 16px;
+  color: rgb(97, 97, 97);
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
-mat-panel-description>img {
-  width: 50%;
-
+label {
+  display: flexbox;
 }
-
-
-mat-panel-description>div {}
-
-
 
 a {
   text-decoration: none;
@@ -47,13 +43,133 @@ input, max-step {
   width: 200px;
 }
 
-.sign-up {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+img {
+  width: 20%;
 }
 
 form {
-  display: block;
+  display: grid;
+  grid-template-columns: 60% 1% 39%;
   padding: 10px;
+
+}
+
+.form {
+  text-align: left;
+  padding-bottom: 70px;
+  width: 59%;
+  background-color: #bebebe70;
+  color: rgb(97, 97, 97);
+  border: 2px solid rgb(97, 97, 97);
+  border-radius: 4px;
+}
+
+.top {
+  grid-row: 1 / span 1;
+  grid-column: 1 /span 3;
+  text-align: center;
+}
+
+.first-name {
+  grid-row: 2 / span 1;
+  grid-column: 1 /span 1;
+}
+
+.last-name {
+  grid-row: 3 / span 1;
+  grid-column: 1 /span 1;
+}
+
+.email-input {
+  grid-row: 4 / span 1;
+  grid-column: 1 /span 1;
+}
+
+.frequency {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: rgb(97, 97, 97);
+  grid-row: 2 / span 2;
+  grid-column: 3 /span 1;
+}
+
+.submit-button {
+  grid-row: 4 / span 1;
+  grid-column: 3 /span 1;
+  text-align: center;
+}
+
+/* input[type=submit] {
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  width: 90px;
+} */
+
+input.ng-invalid {
+  border: 1px solid hsl(0, 50%, 50%);
+}
+
+@media screen and (max-width: 1280px) {
+  form {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form {
+    text-align: left;
+    padding-bottom: 70px;
+    width: 90%;
+    color: rgb(97, 97, 97);
+    border: 2px solid rgb(97, 97, 97);
+    border-radius: 4px;
+  }
+
+  .top {
+    grid-row: 1 / span 1;
+    grid-column: 1 /span 1;
+    text-align: center;
+  }
+
+  .first-name {
+    grid-row: 2 / span 1;
+    grid-column: 1 /span 1;
+  }
+
+  .last-name {
+    grid-row: 3 / span 1;
+    grid-column: 1 /span 1;
+  }
+
+  .email-input {
+    grid-row: 4 / span 1;
+    grid-column: 1 /span 1;
+  }
+
+  .frequency {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: rgb(97, 97, 97);
+    grid-row: 5 / span 1;
+    grid-column: 1 /span 1;
+  }
+
+  .submit-button {
+    grid-row: 6 / span 1;
+    grid-column: 1 /span 1;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 365px) {
+  mat-panel-description {
+    display: none;
+  }
 }
