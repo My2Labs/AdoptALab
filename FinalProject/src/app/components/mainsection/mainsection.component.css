@@ -113,3 +113,10 @@ input.ng-invalid {
     margin: 2px;
   }
 }
+
+.alert {
+  background-color: red;
+  color: white;
+  width: 200px;
+  text-align: center;
+}

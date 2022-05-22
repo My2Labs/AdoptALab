@@ -1,5 +1,3 @@
-
-
 <div class="layout">
     <mat-expansion-panel>
       <mat-expansion-panel-header>
@@ -15,7 +13,7 @@
 </div>
 <div class="formlayout">
 <div class="form">
-  <form #loginForm="ngForm" (ngSubmit)="subscribe(loginForm.value)">
+  <form #loginForm="ngForm" (ngSubmit)="submit(loginForm.value)">
   <p class="top">Sign Up For Our Newsletter!</p>
   <p class="first-name">
     <label for="firstName">First Name: </label>
@@ -25,10 +23,13 @@
     <label for="lastName">Last Name: </label>
     <input ng-required="lastName" ngModel id="lasstName" name="lastName" required/>
   </p>
-  <p class="email-input">
+  <div class="email-input">
     <label for="email">Email Address: </label>
-    <input ngModel type="email" id="email" name="email" required/>
-  </p>
+    <input #email="ngModel" minlength="4" patternEmail required type="email" id="email" name="email" ngModel/>
+    <div *ngIf="email.touched && email.invalid" class="alert">
+      Valid email is required.
+    </div>
+  </div>
   <p class=".submit-button">
   <input [disabled]="!loginForm.valid" type="submit" value="Subscribe" />
   </p>
@@ -38,3 +39,6 @@
   <img src="../../../assets/pawgif.gif" class="pawgif" alt="Pawprint gif" />
 </div>
 </div>
+
+
+
