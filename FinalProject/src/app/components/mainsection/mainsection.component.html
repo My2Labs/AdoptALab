@@ -13,6 +13,9 @@
 
     </mat-expansion-panel>
 </div>
+<!-- <div class="gif">
+  <img src="../../../assets/pawgif.gif" class="pawgif" alt="Pawprint gif" />
+</div> -->
 <div class="formlayout">
 <div class="form">
 <form #loginForm="ngForm" (ngSubmit)="subscribe(loginForm.value)">
@@ -29,7 +32,11 @@
     <label for="email">Email Address: </label>
     <input ngModel type="email" id="email" name="email" required/>
   </p>
+  <p class=".submit-button">
   <input [disabled]="!loginForm.valid" type="submit" value="Subscribe" />
+  </p>
+  <img src="../../../assets/pawgif.gif" class="pawgif" alt="Pawprint gif" />
+
 </form>
 </div>
 </div>
