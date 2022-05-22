@@ -26,7 +26,7 @@ mat-expansion-panel-header {
 .formlayout {
   display: flex;
   justify-content: center;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   padding-top: 100px;
 }
 
@@ -65,7 +65,7 @@ form {
 .form {
   text-align: left;
   padding-bottom: 70px;
-  width: 59%;
+  width: 70%;
   background-color: #cacaca4b;
   color: rgb(97, 97, 97);
   border: 2px solid rgb(97, 97, 97);
@@ -77,17 +77,21 @@ input.ng-invalid {
 }
 
 .pawgif {
-  /* transform: rotate(60deg); */
   opacity: 0.2;
-  width: 50%;
-  position: absolute;
-  left: 44rem;
-  top: 32rem;
-  z-index: -1;
-  animation: anim-ss steps(40) 50s infinite;
+  width: auto;
+  text-align: center;
+  transform: rotate(270deg);
+  position: relative;
+  top: 7rem;
 }
 
-@media screen and (max-width: 1280px) {
+.gif {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 635px) {
   .pawgif {
     display: none;
   }
