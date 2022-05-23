@@ -21,11 +21,11 @@
   </p>
   <p class="last-name">
     <label for="lastName">Last Name: </label>
-    <input ng-required="lastName" ngModel id="lasstName" name="lastName" required/>
+    <input ng-required="lastName" ngModel id="lastName" name="lastName" required/>
   </p>
   <div class="email-input">
     <label for="email">Email Address: </label>
-    <input #email="ngModel" minlength="4" patternEmail required type="email" id="email" name="email" ngModel/>
+    <input #email="ngModel" email="true" name="email" required  minlength="6" maxlength="64" type="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ngModel/>
     <div *ngIf="email.touched && email.invalid" class="alert">
       Valid email is required.
     </div>
@@ -40,5 +40,12 @@
 </div>
 </div>
 
+<!-- <div class="email-input">
+  <label for="email">Email Address: </label>
+  <input #email="ngModel" minlength="4" required type="email" id="email" name="email" ngModel/>
+  <div *ngIf="email.touched && email.invalid" class="alert">
+    Valid email is required.
+  </div>
+</div> -->
 
 

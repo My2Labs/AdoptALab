@@ -16,12 +16,9 @@ mat-expansion-panel-header {
 
 }
 
-/* .formlayout {
-  background-image: url(../../../assets/pupwater14.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-
-} */
+#firstName, #lastName {
+  text-transform: capitalize;
+}
 
 .formlayout {
   display: flex;
