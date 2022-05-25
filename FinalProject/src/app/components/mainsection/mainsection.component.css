@@ -116,4 +116,7 @@ input.ng-invalid {
   color: white;
   width: 200px;
   text-align: center;
+  padding: 20px;
+  border: 2px double white;
+  border-radius: 12px;
 }
