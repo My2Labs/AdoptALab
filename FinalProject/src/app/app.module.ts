@@ -6,7 +6,7 @@ import { HeadComponent } from './components/head/head.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { VideosComponent } from './components/videos/videos.component';
-import { MainsectionComponent } from './components/mainsection/mainsection.component';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -25,6 +25,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FooterdataComponent } from './components/footerdata/footerdata.component';
 import { FormsModule } from '@angular/forms';
+import { AdoptionComponent } from './components/adoption/adoption.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +34,12 @@ import { FormsModule } from '@angular/forms';
     NavigationComponent,
     MainpageComponent,
     VideosComponent,
-    MainsectionComponent,
+    NewsletterComponent,
     PortraitsComponent,
     SlideshowComponent,
     CoverphotoComponent,
     FooterdataComponent,
+    AdoptionComponent,
   ],
   imports: [
     BrowserModule,

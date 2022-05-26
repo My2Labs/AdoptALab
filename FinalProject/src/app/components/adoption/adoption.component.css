@@ -1,0 +1,59 @@
+.gridlayout1 {
+  display: grid;
+  grid-template-rows: 100% 100%;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+img {
+  display: block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  filter: saturate(150%);
+  border: 2px solid silver;
+  background-color: rgb(247, 244, 241);
+  filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.9));
+}
+
+p, div {
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 21px;
+  color: rgb(77, 77, 77);
+  margin: 20px;
+}
+
+p {
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: justify;
+
+}
+
+.adoptionone {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.adoptiontwo {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+
+}
+
+.adoptionthree {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+
+}
+
+.adoptionfour {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+
+}

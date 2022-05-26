@@ -4,6 +4,8 @@
   overflow-x: auto
 } */
 
+
+
 .container {
   display: grid;
   grid-template-columns: 70% 30%;
@@ -28,24 +30,20 @@ gallery {
 }
 
 .carouseltext {
-  width: 90%;
+  width: 70%;
   color: white;
-  background-color: #8b8b8ba8;
   margin-right: 70px;
   padding: 40px 15px 40px 15px;
   font-size: 25px;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
 }
 
 h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Shadows Into Light Two', cursive;
   font-size: 30px;
-  color: rgb(199, 199, 199);
+  color: white;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-
 }
 
 p {
@@ -77,11 +75,9 @@ p {
 }
 
 .carouseltext {
-  width: 95%;
+  width: 90%;
   color: white;
-  background-color: #8b8b8ba8;
   font-size: 16px;
-  border-bottom: 2px solid white;
 }
 
 @media screen and (max-width: 414px) {
@@ -93,8 +89,6 @@ p {
   .carouseltext {
     width: 90%;
     color: white;
-    background-color: #8b8b8ba8;
     font-size: 16px;
-    border-bottom: 2px solid white;
   }
 }

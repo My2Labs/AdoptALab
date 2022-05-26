@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { VideosComponent } from './components/videos/videos.component';
-import { MainsectionComponent } from './components/mainsection/mainsection.component';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
+import { AdoptionComponent } from './components/adoption/adoption.component';
 
 const routes: Routes = [
   {
@@ -14,8 +15,13 @@ const routes: Routes = [
     component: VideosComponent,
   },
   {
+    path: 'Adoption',
+    component: AdoptionComponent,
+  },
+
+  {
     path: 'Newsletter',
-    component: MainsectionComponent,
+    component: NewsletterComponent,
   },
 ];
 

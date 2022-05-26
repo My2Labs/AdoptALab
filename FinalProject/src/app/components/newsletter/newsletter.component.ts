@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-mainsection',
-  templateUrl: './mainsection.component.html',
-  styleUrls: ['./mainsection.component.css'],
+  templateUrl: './newsletter.component.html',
+  styleUrls: ['./newsletter.component.css'],
 })
-export class MainsectionComponent {
+export class NewsletterComponent {
   submit(signup: any) {
     console.log('Form submitted', signup);
   }
