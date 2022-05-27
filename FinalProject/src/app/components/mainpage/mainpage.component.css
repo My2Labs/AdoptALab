@@ -59,7 +59,7 @@ a>img {
   filter: none;
   border: none;
   padding: 0;
-  width: 100%;
+  width: 50%;
 
 }
 
@@ -106,10 +106,8 @@ a>img {
 .akc2 {
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
-  border: 2px solid silver;
-  background-color: rgb(107, 107, 107);
   width: 100%;
-
+  text-align: center;
 }
 
 .akc3 {
