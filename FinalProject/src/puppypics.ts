@@ -69,11 +69,11 @@ export const PHOTOS = [
     imageUrl: '/assets/pupaction7.jpg',
     label: 'Action',
   },
-  {
-    id: 15,
-    imageUrl: '/assets/pupaction8.jpg',
-    label: 'Action',
-  },
+  // {
+  //   id: 15,
+  //   imageUrl: '/assets/pupaction8.jpg',
+  //   label: 'Action',
+  // },
   {
     id: 16,
     imageUrl: '/assets/pupaction11.jpg',
