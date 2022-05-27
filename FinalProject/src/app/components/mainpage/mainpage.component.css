@@ -1,3 +1,13 @@
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color: rgb(107, 107, 107);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
 p, div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 21px;
