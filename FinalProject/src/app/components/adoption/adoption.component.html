@@ -1,4 +1,4 @@
-
+<!--
 <div class="gridlayout1">
   <div class="adoptionone">
     <img src="/"  alt="Placeholder Image" />
@@ -23,5 +23,14 @@
 
     <p>Sample text</p>
   </div>
+</div> -->
+<div>
+<ul>
+  <li *ngFor="let labrador of labradorList">
+    <img *ngIf="labrador.imageUrl" src="{{labrador.imageUrl}}" alt="{labrador.name}" />
+    <p>{{labrador.name}}</p>
+  </li>
+</ul>
 </div>
+
 

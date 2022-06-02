@@ -26,6 +26,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FooterdataComponent } from './components/footerdata/footerdata.component';
 import { FormsModule } from '@angular/forms';
 import { AdoptionComponent } from './components/adoption/adoption.component';
+import { HttpClientModule } from '@angular/common/http';
+// import { LabradorDisplayComponent } from './components/labrador-display/labrador-display.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,7 @@ import { AdoptionComponent } from './components/adoption/adoption.component';
     MatSelectModule,
     MatCheckboxModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [
     {
