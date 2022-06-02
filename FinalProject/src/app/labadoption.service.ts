@@ -11,8 +11,8 @@ export type Labrador = {
   };
 };
 
-export type LabradorResponse = {
-  results: Labrador[];
+type LabradorResponse = {
+  labradors: Labrador[];
 };
 
 @Injectable({
@@ -22,13 +22,13 @@ export class LabadoptionService {
   constructor(private http: HttpClient) {}
 
   listLabrador() {
-    return this.http.get<Labrador[]>(
-      'https://labadoption.herokuapp.com/api/adoption/'
+    return this.http.get<LabradorResponse>(
+      'https://labadoption.herokuapp.com/labadoptions'
     );
   }
-  getLabrador(name: string) {
-    return this.http.get<Labrador>(
-      'https://labadoption.herokuapp.com/api/adoption/${name}'
-    );
-  }
+  // getLabrador(name: string) {
+  //   return this.http.get<LabradorResponse>(
+  //     'https://labadoption.herokuapp.com/labadoptions'
+  //   );
+  // }
 }

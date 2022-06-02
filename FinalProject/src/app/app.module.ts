@@ -27,7 +27,6 @@ import { FooterdataComponent } from './components/footerdata/footerdata.componen
 import { FormsModule } from '@angular/forms';
 import { AdoptionComponent } from './components/adoption/adoption.component';
 import { HttpClientModule } from '@angular/common/http';
-// import { LabradorDisplayComponent } from './components/labrador-display/labrador-display.component';
 
 @NgModule({
   declarations: [
