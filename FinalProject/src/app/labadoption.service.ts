@@ -25,6 +25,8 @@ export class LabadoptionService {
   constructor(private http: HttpClient) {}
 
   listLabrador() {
-    return this.http.get<LabradorResponse>(labradorsEndpoint);
+    return this.http.get<LabradorResponse>(
+      'https://labadoption.herokuapp.com/labadoptions'
+    );
   }
 }
