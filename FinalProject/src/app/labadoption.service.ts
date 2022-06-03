@@ -16,7 +16,7 @@ type LabradorResponse = {
   labradors: Labrador[];
 };
 
-const labradorsEndpoint = environment.labradorsEndpoint;
+const labradorsEndpoint = `${environment.labradorsEndpoint}`;
 
 @Injectable({
   providedIn: 'root',
