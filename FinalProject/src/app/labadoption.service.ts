@@ -22,7 +22,7 @@ type LabradorResponse = {
   providedIn: 'root',
 })
 export class LabadoptionService {
-  constructor(public http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
   listLabrador() {
     return this.http.get<LabradorResponse>(
