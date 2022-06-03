@@ -1,18 +1,35 @@
 .gridlayout1 {
   display: grid;
-  grid-template-rows: 30rem;
+  grid-template-rows: auto;
   grid-template-columns: 33% 33% 33%;
   justify-items: center;
   align-items: center;
 }
 
 img {
-  display: block;
+  display: inline-block;
   padding: 10px;
-  width: 200px;
+  width: 300px;
   filter: saturate(150%);
   border: 2px solid silver;
   background-color: rgb(247, 244, 241);
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  color: rgb(77, 77, 77);
+  margin: 20px;
+  text-align: center;
+}
+
+a {
+  color: rgb(42, 181, 245);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(212, 94%, 40%);
 }
 
 p, div {
