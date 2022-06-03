@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
 
-const labradorsEndpoint = environment.labradorsEndpoint;
-
 export type Labrador = {
   name: string;
   breed: string;
@@ -17,6 +15,8 @@ export type Labrador = {
 type LabradorResponse = {
   labradors: Labrador[];
 };
+
+const labradorsEndpoint = environment.labradorsEndpoint;
 
 @Injectable({
   providedIn: 'root',
