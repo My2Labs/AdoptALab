@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { forkJoin } from 'rxjs';
 import { Labrador, LabadoptionService } from '../../labadoption.service';
-import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-adoption',
@@ -20,19 +18,3 @@ export class AdoptionComponent implements OnInit {
     });
   }
 }
-
-// ngOnInit(): void {
-//   this.labadoptionService.listLabrador().subscribe((response) => {
-//     console.log(response);
-//     const observables = response;
-//     observables
-//       .map((labrador) => labrador.name)
-//       .map((name) => {
-//         return this.labadoptionService.getLabrador(name);
-//       });
-//     forkJoin(observables).subscribe((allLabradors) => {
-//       console.log(allLabradors);
-//       this.labradorList = allLabradors;
-//     });
-//   });
-// }

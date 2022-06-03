@@ -1,39 +1,11 @@
-<!--
+
 <div class="gridlayout1">
-  <div class="adoptionone">
-    <img src="/"  alt="Placeholder Image" />
-    <p>Sample textSample textSample textSample textSample textSample textSample textSample textSample textSample textSample textSample text</p>
-    <p>Sample text</p>
+  <div *ngFor="let labrador of labradors" class="adoptionone">
+    <img *ngIf="labrador.imageUrl"src="{{labrador.imageUrl}}" alt="Puppy Picture" />
+    <p>{{labrador.name}} - Age: {{labrador.age}}</p>
+    <p>{{labrador.sex}} - {{labrador.breed}}</p>
   </div>
-  <div class="adoptiontwo">
-    <img src="/"  alt="Placeholder Image" />
-    <p>Sample textSample textSample textSample textSample textSample textSample textSample textSample textSample textSample textSample text</p>
-
-    <p>Sample text</p>
-  </div>
-  <div class="adoptionthree">
-    <img src="/"  alt="Placeholder Image" />
-    <p>Sample textSample textSample textSample textSample textSample textSample textSample textSample textSample textSample textSample text</p>
-
-    <p>Sample text</p>
-  </div>
-  <div class="adoptionfour">
-    <img src="/"  alt="Placeholder Image" />
-    <p>Sample textSample textSample textSample textSample textSample textSample textSample textSample textSample textSample textSample text</p>
-
-    <p>Sample text</p>
-  </div>
-</div> -->
-<div>
-<ul>
-  <li *ngFor="let labrador of labradors">
-    <img *ngIf="labrador.imageUrl"src="{{labrador.imageUrl}}" alt="{labrador.name}" />
-    <p>{{labrador.name}}</p>
-    <span>{{labrador.age}}</span>
-    <p>{{labrador.sex}}</p>
-    <span>{{labrador.breed}}</span>
-  </li>
-</ul>
 </div>
+
 
 

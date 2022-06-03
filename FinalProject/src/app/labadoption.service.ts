@@ -26,9 +26,4 @@ export class LabadoptionService {
       'https://labadoption.herokuapp.com/labadoptions'
     );
   }
-  // getLabrador(name: string) {
-  //   return this.http.get<LabradorResponse>(
-  //     'https://labadoption.herokuapp.com/labadoptions'
-  //   );
-  // }
 }
