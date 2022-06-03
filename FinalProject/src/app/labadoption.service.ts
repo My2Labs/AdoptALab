@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../environments/environment';
+
+const labradorsEndpoint = environment.labradorsEndpoint;
 
 export type Labrador = {
   name: string;
