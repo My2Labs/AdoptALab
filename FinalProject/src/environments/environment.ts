@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  // labradorsEndpoint: 'https://labadoption.herokuapp.com/labadoptions',
+  labradorsEndpoint: 'https://labadoption.herokuapp.com/labadoptions',
 };
 
 /*
