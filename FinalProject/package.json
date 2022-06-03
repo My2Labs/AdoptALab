@@ -23,7 +23,6 @@
     "hammerjs": "^2.0.8",
     "mdb-angular-ui-kit": "^2.2.0",
     "ng-gallery": "^6.0.1",
-    "ng-image-slider": "^9.1.12",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
