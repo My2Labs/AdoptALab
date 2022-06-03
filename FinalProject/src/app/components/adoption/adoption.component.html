@@ -27,8 +27,11 @@
 <div>
 <ul>
   <li *ngFor="let labrador of labradors">
-    <img *ngIf="labrador.imageUrl" src="{{labrador.imageUrl}}" alt="{labrador.name}" />
+    <img *ngIf="labrador.imageUrl"src="{{labrador.imageUrl}}" alt="{labrador.name}" />
     <p>{{labrador.name}}</p>
+    <span>{{labrador.age}}</span>
+    <span>{{labrador.sex}}</span>
+    <span>{{labrador.breed}}</span>
   </li>
 </ul>
 </div>

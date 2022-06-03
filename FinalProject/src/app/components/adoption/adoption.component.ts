@@ -14,9 +14,9 @@ export class AdoptionComponent implements OnInit {
   constructor(private labadoptionService: LabadoptionService) {}
 
   ngOnInit(): void {
-    this.labadoptionService.listLabrador().subscribe((response) => {
-      console.log(response.labradors);
-      this.labradors = response.labradors;
+    this.labadoptionService.listLabrador().subscribe((response: any) => {
+      console.log(response);
+      this.labradors = response.labadoptions;
     });
   }
 }
