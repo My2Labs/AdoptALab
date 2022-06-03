@@ -27,6 +27,7 @@ import { FooterdataComponent } from './components/footerdata/footerdata.componen
 import { FormsModule } from '@angular/forms';
 import { AdoptionComponent } from './components/adoption/adoption.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ErrorpageComponent } from './components/errorpage/errorpage.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { HttpClientModule } from '@angular/common/http';
     CoverphotoComponent,
     FooterdataComponent,
     AdoptionComponent,
+    ErrorpageComponent,
   ],
   imports: [
     BrowserModule,
