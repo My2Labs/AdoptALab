@@ -2,7 +2,8 @@
 <div class="gridlayout1">
   <div *ngFor="let labrador of labradors" class="adoptionone">
     <img *ngIf="labrador.imageUrl"src="{{labrador.imageUrl}}" alt="Puppy Picture" />
-    <p>{{labrador.name}} - Age: {{labrador.age}}</p>
+    <p class="name">{{labrador.name}}</p>
+    <p>Age: {{labrador.age}}</p>
     <p>{{labrador.sex}} - {{labrador.breed}}</p>
   </div>
 </div>
