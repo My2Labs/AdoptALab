@@ -1,7 +1,1 @@
-/docs/routing/redirections/docs/routing/redirects 301!
-
-[[redirects]]
-  from = "/docs/routing/redirections"
-  to = "/docs/routing/redirects"
-  status = 301
-  force = true
+/app.component.html   200
