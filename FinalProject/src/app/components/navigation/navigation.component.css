@@ -2,10 +2,10 @@
   overflow: hidden;
   /* background-color: #333333; */
   background-image: url("../../../assets/pawprints.png");
-  background-size: 500px 100px;
+  background-size: 500px 86px;
   background-repeat: repeat;
   font-family: Arial;
-  height: 100px;
+  height: 86px;
   padding: 0;
   border-top: 5px solid gray;
   border-bottom: 5px solid gray;
@@ -91,6 +91,7 @@ span {
   width: 50px;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .banner {

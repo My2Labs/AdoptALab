@@ -9,22 +9,19 @@ mat-expansion-panel {
 
 mat-expansion-panel-header {
   height: 70px;
-  background-color: #b8b8b8;
-  border: 4px solid white;
+  background-color: rgb(228, 228, 228);
+  border: 4px solid rgba(0, 0, 0, 0.384);
   margin: 2em;
-  border: 2px solid rgb(228, 228, 228);
-
 }
 
 mat-panel-description {
   color: black;
   font-size: 1.5em;
   text-align: center;
+  text-decoration: solid;
+  text-transform: uppercase;
 }
 
-mat-expansion-panel-header:hover {
-  background-color: orange;
-}
 
 #firstName, #lastName {
   text-transform: capitalize;
