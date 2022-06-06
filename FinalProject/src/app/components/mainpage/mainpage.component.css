@@ -11,9 +11,11 @@ p, div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 21px;
   color: black;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+}
+
+div {
+  padding: 10px;
+  margin: 30px;
 }
 
 p {
@@ -47,13 +49,7 @@ a:hover {
   color: hsl(212, 94%, 40%);
 }
 
-.akc1>p {
-  color: white;
-}
 
-.akc3>p {
-  color: white;
-}
 
 a>img {
   filter: none;
@@ -99,8 +95,11 @@ a>img {
   grid-row: 1 / span 1;
   grid-column: 2 / span 1;
   background-color: rgb(107, 107, 107);
-  border: 2px solid silver;
+  border: 12px double silver;
   width: 100%;
+  padding: 30px;
+  margin: none;
+  text-decoration: none;
 }
 
 .akc2 {
@@ -108,15 +107,31 @@ a>img {
   grid-column: 2 / span 1;
   width: 100%;
   text-align: center;
+  justify-items: center;
+  align-content: center;
+  padding: none;
+  margin: none;
+
 }
 
 .akc3 {
   grid-row: 3 / span 1;
   grid-column: 2 / span 1;
   background-color: rgb(107, 107, 107);
-  border: 2px solid silver;
+  border: 12px double silver;
   width: 100%;
+  padding: 30px;
+  margin: none;
+  text-decoration: none;
+}
 
+.pngclipart {
+  width: 10rem;
+  padding: 0;
+  margin: 0;
+  filter: none;
+  border: none;
+  background-color: transparent;
 }
 
 
@@ -133,7 +148,7 @@ a>img {
   .gridlayout1 {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 90%;
+    grid-template-columns: 100%;
     justify-items: center;
     align-items: center;
     padding: 10px;
@@ -144,7 +159,7 @@ a>img {
   .gridlayout2 {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 90%;
+    grid-template-columns: 100%;
     justify-items: center;
     align-items: center;
     padding: 10px;
@@ -153,29 +168,48 @@ a>img {
   }
 
   .imggrid {
-    grid-row: 1;
+    grid-row: 4;
     grid-column: 1;
     width: 100%;
     text-align: center;
+    padding: none;
+    margin: none;
+
   }
 
   .textgrid {
-    grid-row: 2;
+    grid-row: 5;
     grid-column: 1;
+    padding: none;
+    margin: none;
+
   }
 
   .akc1 {
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 1;
+    padding: none;
+    margin: none;
+
   }
 
   .akc2 {
-    grid-row: 4;
+    grid-row: 2;
     grid-column: 1;
+    padding: none;
+    margin: none;
+
   }
 
   .akc3 {
-    grid-row: 5;
+    grid-row: 3;
     grid-column: 1;
+    padding: none;
+    margin: none;
+
+  }
+
+  .pngclipart {
+    display: none;
   }
 }
