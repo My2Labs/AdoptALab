@@ -46,7 +46,7 @@ a {
 }
 
 a:hover {
-  color: hsl(212, 94%, 40%);
+  color: rgb(188, 188, 207);
 }
 
 
@@ -94,11 +94,12 @@ a>img {
 .akc1 {
   grid-row: 1 / span 1;
   grid-column: 2 / span 1;
-  background-color: rgb(107, 107, 107);
+  background-color: rgb(95, 95, 95);
   border: 12px double silver;
   width: 100%;
   padding: 30px;
   margin: none;
+  color: white;
   text-decoration: none;
 }
 
@@ -117,11 +118,12 @@ a>img {
 .akc3 {
   grid-row: 3 / span 1;
   grid-column: 2 / span 1;
-  background-color: rgb(107, 107, 107);
+  background-color: rgb(95, 95, 95);
   border: 12px double silver;
   width: 100%;
   padding: 30px;
   margin: none;
+  color: white;
   text-decoration: none;
 }
 
