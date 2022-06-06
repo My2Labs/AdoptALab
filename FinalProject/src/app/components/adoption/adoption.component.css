@@ -24,12 +24,12 @@ h2 {
 }
 
 a {
-  color: rgb(42, 181, 245);
+  color: rgb(41, 111, 143);
   text-decoration: none;
 }
 
 a:hover {
-  color: hsl(212, 94%, 40%);
+  color: rgb(250, 163, 2);
 }
 
 .name {
@@ -50,7 +50,7 @@ p, div {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
 }
 
 @media screen and (max-width: 775px) {
