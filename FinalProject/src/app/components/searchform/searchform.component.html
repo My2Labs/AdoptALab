@@ -1,0 +1,6 @@
+<div class="searchformdiv">
+  <form #searchForm="ngForm" class="searchformdiv" (ngSubmit)="searchDogs(searchForm.value)">
+    <label for="search-term">Search Labradors</label>
+    <input id="search-term" name="searchTerm" type="search-term" placeholder="Name, Breed, City, State.." ngModel/>
+    <input type="submit" value="Search" />
+  </form>

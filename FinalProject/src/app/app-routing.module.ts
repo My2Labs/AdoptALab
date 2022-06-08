@@ -5,6 +5,7 @@ import { VideosComponent } from './components/videos/videos.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { AdoptionComponent } from './components/adoption/adoption.component';
 import { ErrorpageComponent } from './components/errorpage/errorpage.component';
+import { SearchresultsComponent } from './components/searchresults/searchresults.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'Errorpage',
     component: ErrorpageComponent,
+  },
+  {
+    path: 'results',
+    component: SearchresultsComponent,
   },
 ];
 

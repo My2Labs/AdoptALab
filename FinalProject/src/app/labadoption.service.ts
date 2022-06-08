@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
+import { SearchformComponent } from './components/searchform/searchform.component';
 
 export type Labrador = {
   name: string;
   breed: string;
   sex: string;
   age: string;
+  city: string;
+  state: string;
   imageUrl?: {
     imageUrl: string;
   };
@@ -26,6 +29,11 @@ export class LabadoptionService {
 
   listLabrador() {
     return this.http.get<LabradorResponse>(labradorsEndpoint);
+  }
+  search(searchTerm: string) {
+    return this.http.get<LabradorResponse>(
+      `${labradorsEndpoint}?search=${searchTerm}`
+    );
   }
 }
 

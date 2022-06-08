@@ -1,9 +1,12 @@
 <h2>Please contact us at <a href="https://www.pcsteps.com/wp-content/uploads/2018/04/The_Most_Intresting_404_ERROR_Pages_Around_The_Web_020.png" target="blank">this link</a> if you're interested in adopting one of these sweethearts!</h2>
+<app-searchform></app-searchform>
+<router-outlet></router-outlet>
 <div class="gridlayout1">
   <div *ngFor="let labrador of labradors" class="adoptionone">
     <img *ngIf="labrador.imageUrl"src="{{labrador.imageUrl}}" alt="{{labrador.name}}" />
     <h3 class="name">{{labrador.name}}</h3>
     <p>Age: {{labrador.age}}</p>
+    <p>Location: {{labrador.city}}, {{labrador.state}}</p>
     <p>{{labrador.sex}} - {{labrador.breed}}</p>
   </div>
 </div>

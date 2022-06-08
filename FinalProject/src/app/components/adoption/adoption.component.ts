@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Labrador, LabadoptionService } from '../../labadoption.service';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-adoption',
@@ -7,7 +8,7 @@ import { Labrador, LabadoptionService } from '../../labadoption.service';
   styleUrls: ['./adoption.component.css'],
 })
 export class AdoptionComponent implements OnInit {
-  labradors: Labrador[] = [];
+  @Input() labradors: Labrador[] = [];
 
   constructor(private labadoptionService: LabadoptionService) {}
 

@@ -1,0 +1,31 @@
+p, div {
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: rgb(77, 77, 77);
+  margin: 20px;
+}
+
+.searchformdiv {
+  display: block;
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+}
+
+.searchform {
+  display: grid;
+  grid-template-columns: 2fr .5fr;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+input {
+  padding: 5px;
+  /* text-transform: capitalize; */
+}
+
+label {
+  display: none;
+}

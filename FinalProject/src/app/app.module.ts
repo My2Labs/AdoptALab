@@ -28,6 +28,8 @@ import { FormsModule } from '@angular/forms';
 import { AdoptionComponent } from './components/adoption/adoption.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorpageComponent } from './components/errorpage/errorpage.component';
+import { SearchformComponent } from './components/searchform/searchform.component';
+import { SearchresultsComponent } from './components/searchresults/searchresults.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { ErrorpageComponent } from './components/errorpage/errorpage.component';
     FooterdataComponent,
     AdoptionComponent,
     ErrorpageComponent,
+    SearchformComponent,
+    SearchresultsComponent,
   ],
   imports: [
     BrowserModule,
