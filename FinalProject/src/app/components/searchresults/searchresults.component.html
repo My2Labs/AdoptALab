@@ -1,4 +1,17 @@
-<app-adoption *ngIf="results.length; else empty" [labradors]="results"></app-adoption>
+<!-- <app-adoption *ngIf="results.length; else empty" [labradors]="results"></app-adoption>
+<ng-template #empty>
+  <p>No results found.</p>
+</ng-template> -->
+
+<app-adoption *ngFor="let result of results"
+[name]="result.name"
+[age]="result.age"
+[city]="result.city"
+[state]="result.state"
+[breed]="result.breed"
+
+></app-adoption>
+
 <ng-template #empty>
   <p>No results found.</p>
 </ng-template>

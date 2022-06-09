@@ -17,11 +17,13 @@ export class SearchresultsComponent implements OnInit {
     private labadoptionService: LabadoptionService
   ) {}
 
-  ngOnInit(): void {
-    this.route.queryParams.subscribe((params) => {
+  ngOnInit() {
+    return this.route.queryParams.subscribe((params) => {
       this.searchTerm = params['search'];
       this.labadoptionService.search(this.searchTerm).subscribe((response) => {
-        this.results = response.labradors;
+        console.log(response.labadoptions);
+
+        this.results = response.labadoptions;
       });
     });
   }

@@ -16,7 +16,7 @@ export type Labrador = {
 };
 
 type LabradorResponse = {
-  labradors: Labrador[];
+  labadoptions: Labrador[];
 };
 
 const labradorsEndpoint = environment.labradorsEndpoint;
