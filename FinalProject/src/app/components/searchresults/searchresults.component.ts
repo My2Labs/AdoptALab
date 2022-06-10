@@ -10,7 +10,7 @@ import { LabadoptionService } from '../../labadoption.service';
 })
 export class SearchresultsComponent implements OnInit {
   searchTerm = '';
-  results: Labrador[] = [];
+  search: Labrador[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -23,7 +23,7 @@ export class SearchresultsComponent implements OnInit {
       this.labadoptionService.search(this.searchTerm).subscribe((response) => {
         console.log(response.labadoptions);
 
-        this.results = response.labadoptions;
+        this.search = response.labadoptions;
       });
     });
   }

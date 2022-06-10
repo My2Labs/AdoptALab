@@ -1,4 +1,4 @@
-<app-adoption *ngIf="results.length; else empty" [labradors]="results"></app-adoption>
+<app-adoption *ngIf="search.length; else empty" [labradors]="search"></app-adoption>
 <ng-template #empty>
   <p>No results found.</p>
 </ng-template>
