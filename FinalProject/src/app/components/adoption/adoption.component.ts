@@ -9,6 +9,12 @@ import { Input } from '@angular/core';
 })
 export class AdoptionComponent implements OnInit {
   @Input() labradors: Labrador[] = [];
+  @Input() name!: string;
+  @Input() age!: string;
+  @Input() city!: string;
+  @Input() state!: string;
+  @Input() breed!: string;
+  @Input() sex!: string;
 
   constructor(private labadoptionService: LabadoptionService) {}
 

@@ -32,7 +32,7 @@ export class LabadoptionService {
   }
   search(searchTerm: string) {
     return this.http.get<LabradorResponse>(
-      `${labradorsEndpoint}?search=${searchTerm}`
+      `${labradorsEndpoint}/search?search=${searchTerm}`
     );
   }
 }
