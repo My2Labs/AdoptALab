@@ -20,7 +20,6 @@ type LabradorResponse = {
 };
 
 const labradorsEndpoint = environment.labradorsEndpoint;
-const herokuEndpoint = environment.herokuEndpoint;
 
 @Injectable({
   providedIn: 'root',
@@ -33,7 +32,7 @@ export class LabadoptionService {
   }
   search(searchTerm: string) {
     return this.http.get<LabradorResponse>(
-      `${herokuEndpoint}?search=${searchTerm}`
+      `${labradorsEndpoint}search?search=${searchTerm}`
     );
   }
 }

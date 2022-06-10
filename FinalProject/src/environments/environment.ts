@@ -4,9 +4,10 @@
 
 export const environment = {
   production: false,
-  labradorsEndpoint: 'https://labadoption.herokuapp.com/labadoptions',
+  labradorsEndpoint: 'https://labadoption.herokuapp.com/labadoptions/',
   randomdogsEndpoint: 'https://dog.ceo/api/breed/labrador/images',
-  herokuEndpoint: 'https://labadoption.herokuapp.com/labadoptions/search/',
+  herokuEndpoint: 'https://labadoption.herokuapp.com/labadoptions/',
+  localEndpoint: 'http://localhost:8080/labadoptions/',
   // randomdogsEndpoint: 'https://api.api-ninjas.com/v1/dogs?name=labrador',
 };
 
