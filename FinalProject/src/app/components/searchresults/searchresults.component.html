@@ -1,19 +1,20 @@
-<app-adoption
-  *ngIf="results.length; else empty"
-  [labradors]="results"
-></app-adoption>
+
+<div *ngIf="labradors.length; else empty" class="gridlayout1">
+  <li *ngFor="let labrador of labradors">
+    <img *ngIf="labrador.imageUrl"src="{{labrador.imageUrl}}" alt="{{labrador.name}}" />
+    <h3 class="name">{{labrador.name}}</h3>
+    <p>Age: {{labrador.age}}</p>
+    <p>Location: {{labrador.city}}, {{labrador.state}}</p>
+    <p>{{labrador.sex}} - {{labrador.breed}}</p>
+</li>
+</div>
+
 <ng-template #empty>
   <p>No results found.</p>
 </ng-template>
 
-<!-- <app-adoption *ngFor="let result of results"
-[name]="result.name"
-[age]="result.age"
-[city]="result.city"
-[state]="result.state"
-[breed]="result.breed"
-></app-adoption> -->
-<!--
-<ng-template #empty>
-  <p>No results found.</p>
-</ng-template> -->
+
+
+
+
+

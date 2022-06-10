@@ -23,7 +23,7 @@ p, div {
 
 input {
   padding: 5px;
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
 }
 
 label {

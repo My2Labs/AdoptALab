@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Labrador } from '../../labadoption.service';
 import { LabadoptionService } from '../../labadoption.service';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-searchresults',
@@ -10,7 +11,13 @@ import { LabadoptionService } from '../../labadoption.service';
 })
 export class SearchresultsComponent implements OnInit {
   searchTerm = '';
-  results: Labrador[] = [];
+  labradors: Labrador[] = [];
+  @Input() name!: string;
+  @Input() age!: string;
+  @Input() city!: string;
+  @Input() state!: string;
+  @Input() breed!: string;
+  @Input() sex!: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,7 +30,7 @@ export class SearchresultsComponent implements OnInit {
       this.labadoptionService.search(this.searchTerm).subscribe((response) => {
         console.log(response.labadoptions);
 
-        this.results = response.labadoptions;
+        this.labradors = response.labadoptions;
       });
     });
   }
