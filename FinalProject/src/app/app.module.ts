@@ -31,6 +31,7 @@ import { ErrorpageComponent } from './components/errorpage/errorpage.component';
 import { SearchformComponent } from './components/searchform/searchform.component';
 import { SearchresultsComponent } from './components/searchresults/searchresults.component';
 import { CommentsComponent } from './components/comments/comments.component';
+import { AllaboutComponent } from './components/allabout/allabout.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { CommentsComponent } from './components/comments/comments.component';
     SearchformComponent,
     SearchresultsComponent,
     CommentsComponent,
+    AllaboutComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { NewsletterComponent } from './components/newsletter/newsletter.componen
 import { AdoptionComponent } from './components/adoption/adoption.component';
 import { ErrorpageComponent } from './components/errorpage/errorpage.component';
 import { SearchresultsComponent } from './components/searchresults/searchresults.component';
+import { AllaboutComponent } from './components/allabout/allabout.component';
 
 const routes: Routes = [
   {
@@ -13,8 +14,8 @@ const routes: Routes = [
     component: MainpageComponent,
   },
   {
-    path: 'Videos',
-    component: VideosComponent,
+    path: 'AllAbout',
+    component: AllaboutComponent,
   },
   {
     path: 'Adoption',

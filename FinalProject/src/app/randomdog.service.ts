@@ -6,9 +6,9 @@ export type Randomdog = {
   message: string;
 };
 
-type RandomdogResponse = {
-  randomdogs: Randomdog[];
-};
+// export type RandomdogResponse = {
+//   randomdogs: Randomdog[];
+// };
 
 const randomdogsEndpoint = environment.randomdogsEndpoint;
 
