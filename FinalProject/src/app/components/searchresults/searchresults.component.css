@@ -46,8 +46,22 @@ a:hover {
   margin: 20px;
 }
 
-p, div, ng-template {
-  display: block;
+p {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: rgb(77, 77, 77);
+  margin: 20px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 250px;
+
+}
+
+div {
+  display: flex;
+  justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: rgb(77, 77, 77);
@@ -55,9 +69,8 @@ p, div, ng-template {
   text-align: center;
 }
 
-p {
-  text-align: left;
-}
+
+
 
 
 @media screen and (max-width: 775px) {

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Randomdog, RandomdogService } from '../../randomdog.service';
+import * as _ from 'lodash';
+import 'lodash';
 
 @Component({
   selector: 'app-mainsection',
@@ -6,24 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./newsletter.component.css'],
 })
 export class NewsletterComponent implements OnInit {
+  randomdogs: Randomdog[] = [];
+
   submit(signup: any) {
     console.log('Form submitted', signup);
   }
 
-  ngOnInit(): void {}
+  constructor(private randomdogService: RandomdogService) {}
 
-  getRandomDog() {
-    // fetch();
+  ngOnInit(): void {
+    this.randomdogService.listRandomdog().forEach((response) => {
+      console.log(response);
+    });
   }
 }
-
-// constructor(private randomdogService: RandomdogService) {}
-
-// ngOnInit(): void {
-//   this.randomdogService.listRandomdog().forEach((response) => {
-//     this.randomdogs = [...this.randomdogs, new Randomdog(response.message)];
-//     console.log(response.message);
-//   });
 
 // ngOnInit(): void {
 //   this.randomdogService.listRandomdog().subscribe((response: any) => {
