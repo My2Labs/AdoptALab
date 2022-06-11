@@ -12,12 +12,12 @@ import { Input } from '@angular/core';
 export class SearchresultsComponent implements OnInit {
   searchTerm = '';
   labradors: Labrador[] = [];
-  @Input() name!: string;
-  @Input() age!: string;
-  @Input() city!: string;
-  @Input() state!: string;
-  @Input() breed!: string;
-  @Input() sex!: string;
+  // @Input() name!: string;
+  // @Input() age!: string;
+  // @Input() city!: string;
+  // @Input() state!: string;
+  // @Input() breed!: string;
+  // @Input() sex!: string;
 
   constructor(
     private route: ActivatedRoute,
