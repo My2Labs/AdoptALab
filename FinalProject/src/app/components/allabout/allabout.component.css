@@ -1,0 +1,23 @@
+p, div {
+  display: block;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 21px;
+  color: rgb(77, 77, 77);
+  text-align: center;
+  margin-top: 50px 50px 0 50px;
+  padding: 50px 50px 0 50px;
+}
+
+
+
+/* p, div {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 21px;
+  color: black;
+}
+
+div {
+  padding: 10px;
+  margin: 30px;
+} */
