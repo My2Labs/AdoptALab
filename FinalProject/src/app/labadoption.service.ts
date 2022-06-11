@@ -25,15 +25,7 @@ const labradorsEndpoint = environment.labradorsEndpoint;
   providedIn: 'root',
 })
 export class LabadoptionService {
-  labadoptions: Labrador[] = [];
-
   constructor(private http: HttpClient) {}
-
-  fetchLabs() {
-    return this.http.get<LabradorResponse>(
-      `${labradorsEndpoint}/labadoptions}`
-    );
-  }
 
   listLabrador() {
     return this.http.get<LabradorResponse>(labradorsEndpoint);

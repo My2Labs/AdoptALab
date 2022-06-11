@@ -1,9 +1,4 @@
 
-<!-- <app-adoption *ngIf="labradors.length; else empty"  [labradors]="labradors"  class="gridlayout1"><app-adoption>
-
-<app-searchresults *ngIf="labradors.length; else empty"  [labradors]="labradors"  class="gridlayout1"><app-searchresults>
- -->
-
 <div *ngIf="labradors.length; else empty" class="gridlayout1">
   <li *ngFor="let labrador of labradors">
     <img *ngIf="labrador.imageUrl"src="{{labrador.imageUrl}}" alt="{{labrador.name}}" />

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
-import { VideosComponent } from './components/videos/videos.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { AdoptionComponent } from './components/adoption/adoption.component';
 import { ErrorpageComponent } from './components/errorpage/errorpage.component';
