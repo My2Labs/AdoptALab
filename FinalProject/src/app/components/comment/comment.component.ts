@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommentsService } from 'src/app/comments.service';
+import { Randomdog, RandomdogService } from '../../randomdog.service';
 
 @Component({
   selector: 'app-comment',
@@ -13,6 +14,7 @@ export class CommentComponent implements OnInit {
   name = '';
   email = '';
   comment = '';
+  randomdog = '';
 
   post() {
     this.postComment.push(this.comment);
@@ -24,9 +26,15 @@ export class CommentComponent implements OnInit {
     this.comment = '';
   }
 
-  constructor() {}
+  constructor(private randomdogService: RandomdogService) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.randomdogService.listRandomdog().forEach((response: any) => {
+      console.log(response);
+      this.randomdog =
+        response.message[Math.floor(Math.random() * response.message.length)];
+    });
+  }
 
   // addComment(newComment: Comment) {
   //   this['commentsService']

@@ -1,7 +1,7 @@
 .gridlayout1 {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 70%;
+  grid-template-columns: 50% 50%;
   justify-items: center;
   align-items: center;
 }
@@ -24,6 +24,11 @@ input {
   box-sizing: border-box;
 }
 
+.input-name, .input-email, .input-comment {
+  display: inline-block;
+  vertical-align: top;
+}
+
 
 
 p {
@@ -32,7 +37,6 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: rgb(77, 77, 77);
-  margin: 20px;
   text-align: center;
 
 }
@@ -43,12 +47,28 @@ div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: rgb(77, 77, 77);
-  margin: 20px;
   text-align: center;
 }
 
 
+img {
+  width: 70%;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 4;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
 
+.comment-submitted {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+}
+
+.comment-input {
+  text-align: left;
+}
 
 
 @media screen and (max-width: 775px) {

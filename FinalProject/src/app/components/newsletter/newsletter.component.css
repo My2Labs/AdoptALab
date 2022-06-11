@@ -95,6 +95,12 @@ input.ng-invalid {
   margin: 0;
 }
 
+.random-dog {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
 
 
 @media screen and (max-width: 635px) {

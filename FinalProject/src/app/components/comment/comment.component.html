@@ -1,14 +1,27 @@
 <h2>Leave us a comment!</h2>
 
 <div class="gridlayout1">
-<label for="name">Name</label>
-<input type="text" id="name" name="name" ngModel>
-<label for="email">Email</label>
-<input type="text" id="email" name="email" ngModel>
-<label for="comment">Comment</label>
-<textarea [(ngModel)]="comment"></textarea>
-<button (click)="post()">Submit Comment</button>
-<div *ngFor="let comments of postComment">
+  <div class="random-dog">
+    <img src="{{ randomdog }}" alt="something" />
+  </div>
+  <div class="comment-input">
+    <div class="input-name">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" ngModel>
+    </div>
+    <div class="input-email">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" ngModel>
+    </div>
+    <div class="input-comment">
+    <label for="comment">Comment</label>
+    <textarea [(ngModel)]="comment"></textarea>
+    </div>
+    <div class="input-submit">
+    <button (click)="post()">Submit Comment</button>
+    </div>
+  </div>
+<div *ngFor="let comments of postComment" class="comment-submitted">
   <h3>Comments:</h3>
   <p>{{comments}}</p>
 </div>
