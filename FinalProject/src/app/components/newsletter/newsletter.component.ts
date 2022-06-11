@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Randomdog, RandomdogService } from '../../randomdog.service';
-import * as _ from 'lodash';
-import 'lodash';
 
 @Component({
   selector: 'app-mainsection',
@@ -19,7 +17,8 @@ export class NewsletterComponent implements OnInit {
 
   ngOnInit(): void {
     this.randomdogService.listRandomdog().forEach((response) => {
-      console.log(response);
+      console.log(response.message);
+      this.randomdogs.push(response);
     });
   }
 }

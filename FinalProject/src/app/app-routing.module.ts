@@ -6,6 +6,7 @@ import { AdoptionComponent } from './components/adoption/adoption.component';
 import { ErrorpageComponent } from './components/errorpage/errorpage.component';
 import { SearchresultsComponent } from './components/searchresults/searchresults.component';
 import { AllaboutComponent } from './components/allabout/allabout.component';
+import { CommentComponent } from './components/comment/comment.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'Newsletter',
     component: NewsletterComponent,
+  },
+  {
+    path: 'Comment',
+    component: CommentComponent,
   },
   {
     path: 'Errorpage',

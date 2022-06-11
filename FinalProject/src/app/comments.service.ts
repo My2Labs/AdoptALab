@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
 
-type CommentResponse = {
+export type CommentResponse = {
   comments: Comment[];
 };
 
@@ -10,6 +10,15 @@ type CommentResponse = {
   providedIn: 'root',
 })
 export class CommentsService {
+  deleteComment(id: any, postId: string | undefined) {
+    throw new Error('Method not implemented.');
+  }
+  getCommentUpdateListener() {
+    throw new Error('Method not implemented.');
+  }
+  getComments(postId: string | undefined) {
+    throw new Error('Method not implemented.');
+  }
   fetchComments() {
     throw new Error('Method not implemented.');
   }
@@ -19,7 +28,7 @@ export class CommentsService {
 
   addComment(comment: Comment) {
     return this.http.post<CommentResponse>(
-      `${environment.randomdogsEndpoint}/comments`,
+      `${environment.labradorsEndpoint}/comments`,
       comment
     );
   }

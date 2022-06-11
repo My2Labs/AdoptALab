@@ -30,8 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ErrorpageComponent } from './components/errorpage/errorpage.component';
 import { SearchformComponent } from './components/searchform/searchform.component';
 import { SearchresultsComponent } from './components/searchresults/searchresults.component';
-import { CommentsComponent } from './components/comments/comments.component';
 import { AllaboutComponent } from './components/allabout/allabout.component';
+import { CommentComponent } from './components/comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -49,8 +49,8 @@ import { AllaboutComponent } from './components/allabout/allabout.component';
     ErrorpageComponent,
     SearchformComponent,
     SearchresultsComponent,
-    CommentsComponent,
     AllaboutComponent,
+    CommentComponent,
   ],
   imports: [
     BrowserModule,

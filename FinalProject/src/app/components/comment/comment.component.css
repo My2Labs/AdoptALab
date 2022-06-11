@@ -1,0 +1,59 @@
+.gridlayout1 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 70%;
+  justify-items: center;
+  align-items: center;
+}
+
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  color: rgb(77, 77, 77);
+  margin: 20px;
+  text-align: center;
+}
+
+input, textarea {
+  padding: 10px;
+  margin: 10px;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+
+
+p {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: rgb(77, 77, 77);
+  margin: 20px;
+  text-align: center;
+
+}
+
+div {
+  display: block;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: rgb(77, 77, 77);
+  margin: 20px;
+  text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 775px) {
+  .gridlayout1 {
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+  }
+}
