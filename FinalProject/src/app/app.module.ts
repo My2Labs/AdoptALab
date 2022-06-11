@@ -32,6 +32,7 @@ import { SearchformComponent } from './components/searchform/searchform.componen
 import { SearchresultsComponent } from './components/searchresults/searchresults.component';
 import { CommentsComponent } from './components/comments/comments.component';
 import { AllaboutComponent } from './components/allabout/allabout.component';
+import { LabIndexComponent } from './components/lab-index/lab-index.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { AllaboutComponent } from './components/allabout/allabout.component';
     SearchresultsComponent,
     CommentsComponent,
     AllaboutComponent,
+    LabIndexComponent,
   ],
   imports: [
     BrowserModule,

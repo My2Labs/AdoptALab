@@ -15,6 +15,7 @@ export class AdoptionComponent implements OnInit {
   @Input() state!: string;
   @Input() breed!: string;
   @Input() sex!: string;
+  @Input() imageUrl!: string;
 
   constructor(private labadoptionService: LabadoptionService) {}
 
