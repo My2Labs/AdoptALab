@@ -6,8 +6,7 @@
   align-items: center;
 }
 
-
-h2 {
+h2, h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 24px;
   color: rgb(77, 77, 77);
@@ -15,30 +14,29 @@ h2 {
   text-align: center;
 }
 
-input, textarea {
-  padding: 10px;
-  margin: 10px;
-}
-
 input {
   box-sizing: border-box;
 }
 
-.input-name, .input-email, .input-comment {
-  display: inline-block;
-  vertical-align: top;
+label, input {
+  width: 40rem;
+  padding: 10px 50px 10px 50px;
+  margin: 10px 50px 10px 50px;
+  text-align: left;
 }
 
-
+textarea {
+  width: 40rem;
+  height: 200px;
+}
 
 p {
-  display: flex;
+  display: block;
   justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: rgb(77, 77, 77);
   text-align: center;
-
 }
 
 div {
@@ -49,7 +47,6 @@ div {
   color: rgb(77, 77, 77);
   text-align: center;
 }
-
 
 img {
   width: 70%;
@@ -62,13 +59,15 @@ img {
 }
 
 .comment-submitted {
-  grid-row: 2 / span 1;
-  grid-column: 1 / span 2;
+  display: block;
+  padding: 20px 20px 200px 20px;
+  margin-bottom: 100px;
 }
 
-.comment-input {
-  text-align: left;
+button {
+  margin: 10px
 }
+
 
 
 @media screen and (max-width: 775px) {

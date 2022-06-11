@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { CommentsService } from 'src/app/comments.service';
-import { Randomdog, RandomdogService } from '../../randomdog.service';
+import { RandomdogService } from '../../randomdog.service';
 
 @Component({
   selector: 'app-comment',
