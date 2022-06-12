@@ -9,7 +9,27 @@ p, div {
   padding: 50px 50px 0 50px;
 }
 
+img {
+  width: 70px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
 
+a>p {
+  padding: 10px;
+  margin: 0;
+}
+
+a {
+  color: lavender;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(212, 94%, 40%);
+  filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.9));
+
+}
 
 /* p, div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
