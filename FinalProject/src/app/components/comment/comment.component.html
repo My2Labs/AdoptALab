@@ -2,7 +2,7 @@
 
 <div class="gridlayout1">
   <div class="random-dog">
-    <img src="{{ randomdog }}" alt="Picture of Labrador" />
+    <img src="{{ randomdog }}" alt="something" />
   </div>
   <div class="comment-input">
     <div class="input-name">
@@ -14,7 +14,7 @@
     <input type="text" id="email" name="email" ngModel>
     </div>
     <div class="input-comment">
-    <label for="comment">Comment</label>
+    <p><label for="comment">Comment</label></p>
     <textarea [(ngModel)]="comment"></textarea>
     </div>
     <div class="input-submit">
@@ -25,10 +25,10 @@
 
 <h3>Comments:</h3>
   <div *ngFor="let comments of postComment" class="comment-submitted">
-    <p>{{name}}</p>
-    <p>{{email}}</p>
     <p>{{comments}}</p>
   </div>
+  <p>This site is pawsome!</p>
+
 
 <!-- <form #newCommentForm="ngForm" class="new-comment-form" (ngSubmit)="addComment(newCommentForm.value)">
   <label for="name">Name</label>
