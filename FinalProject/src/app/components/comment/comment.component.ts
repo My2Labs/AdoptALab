@@ -15,8 +15,10 @@ type Comment = {
 })
 export class CommentComponent implements OnInit {
   comments: Comment[] = [];
-  // [x: string]: any;
+  [x: string]: any;
   postComment: string[] = [];
+  name = '';
+  email = '';
   comment = '';
   randomdog = '';
 
