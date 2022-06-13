@@ -29,17 +29,25 @@
   </div>
   <p>This site is pawsome!</p>
 
-
-<!-- <form #newCommentForm="ngForm" class="new-comment-form" (ngSubmit)="addComment(newCommentForm.value)">
+  <ul>
+    <li *ngFor="let comment of comments">
+      <p>
+        [name]="comment.name"
+        [email]="comment.email"
+        [comment]="comment.comment"
+      </p>
+    </li>
+  </ul>
+<form #newCommentForm="ngForm" class="new-comment-form" (ngSubmit)="addComment(newCommentForm.value)">
   <label for="name">Name</label>
   <input type="text" name="name" id="name" ngModel />
 
   <label for="email">Email</label>
-  <input type="text" id="email" name="email" ngModel>
+  <input type="text" id="email" name="email" ngModel />
 
   <label for="comment">Comment</label>
   <textarea type="url" name="comment" id="comment" ngModel></textarea>
 
   <input type="submit" value="Add Comment" />
 </form>
-</div> -->
+

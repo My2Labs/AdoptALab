@@ -28,7 +28,7 @@ export class CommentsService {
 
   addComment(comment: Comment) {
     return this.http.post<CommentResponse>(
-      `${environment.labradorsEndpoint}/comments`,
+      `${environment.commentsEndpoint}/comments`,
       comment
     );
   }

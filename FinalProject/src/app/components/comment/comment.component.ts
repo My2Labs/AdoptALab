@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RandomdogService } from '../../randomdog.service';
+import { CommentsService } from '../../comments.service';
 import { Input } from '@angular/core';
-
-type Comment = {
-  name: string;
-  email: string;
-  comment: string;
-};
+import { Comment } from '../models/Comments';
 
 @Component({
   selector: 'app-comment',
@@ -14,7 +10,8 @@ type Comment = {
   styleUrls: ['./comment.component.css'],
 })
 export class CommentComponent implements OnInit {
-  comments: Comment[] = [];
+  @Input() comments: Comment[] = [];
+
   [x: string]: any;
   postComment: string[] = [];
   name = '';
@@ -26,10 +23,9 @@ export class CommentComponent implements OnInit {
     this.postComment.push(this.comment);
   }
 
-  // post() {
-  //   this.comments.push({ name: '', email: '', comment: '' });
-  //   console.log(this.comments);
-  // }
+  addComment(newComment: Comment) {
+    // Emit event
+  }
 
   constructor(private randomdogService: RandomdogService) {}
 
@@ -39,14 +35,5 @@ export class CommentComponent implements OnInit {
       this.randomdog =
         response.message[Math.floor(Math.random() * response.message.length)];
     });
-
-    // addComment(newComment: Comment) {
-    //   this['commentsService']
-    //     .addComment(newComment)
-    //     .subscribe((response: { comment: any }) => {
-    //       this['comments'] = [response.comment];
-    //       console.log(response);
-    //     });
-    // }
   }
 }
