@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   labradorsEndpoint: 'https://labadoption.herokuapp.com/labadoptions/',
-  randomdogsEndpoint: 'https://dog.ceo/api/breed/labrador/images',
+  randomdogsEndpoint: 'https://dog.ceo/api/breed/labrador/images?callback=foo',
   commentsEndpoint: 'https://my2labs-comments.herokuapp.com/comments/',
 };
 
