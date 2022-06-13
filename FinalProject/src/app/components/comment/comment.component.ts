@@ -35,7 +35,7 @@ export class CommentComponent implements OnInit {
       this.randomdog = response.message;
     });
   }
-
+  // SAVING TO WORK ON AFTER CAPSTONE.
   // ngOnInit() {
   //   this.randomdogService.listRandomdog().forEach((response: any) => {
   //     console.log(response.message);
