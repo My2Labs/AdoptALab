@@ -31,9 +31,16 @@ export class CommentComponent implements OnInit {
 
   ngOnInit() {
     this.randomdogService.listRandomdog().forEach((response: any) => {
-      console.log(response);
-      this.randomdog =
-        response.message[Math.floor(Math.random() * response.message.length)];
+      console.log(response.message);
+      this.randomdog = response.message;
     });
   }
+
+  // ngOnInit() {
+  //   this.randomdogService.listRandomdog().forEach((response: any) => {
+  //     console.log(response.message);
+  //     this.randomdog =
+  //       response.message[Math.floor(Math.random() * response.message.length)];
+  //   });
+  // }
 }

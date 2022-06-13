@@ -5,7 +5,10 @@
 export const environment = {
   production: false,
   labradorsEndpoint: 'https://labadoption.herokuapp.com/labadoptions/',
-  randomdogsEndpoint: 'https://dog.ceo/api/breed/labrador/images?callback=foo',
+  // randomdogsEndpoint: 'https://dog.ceo/api/breed/labrador/images?callback=foo',
+
+  randomdogsEndpoint: 'https://dog.ceo/api/breeds/image/random',
+
   commentsEndpoint: 'https://my2labs-comments.herokuapp.com/comments/',
 };
 
