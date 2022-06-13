@@ -29,18 +29,18 @@ export class CommentComponent implements OnInit {
 
   constructor(private randomdogService: RandomdogService) {}
 
-  // ngOnInit() {
-  //   this.randomdogService.listRandomdog().forEach((response: any) => {
-  //     console.log(response.message);
-  //     this.randomdog = response.message;
-  //   });
-  // }
-
   ngOnInit() {
     this.randomdogService.listRandomdog().forEach((response: any) => {
       console.log(response.message);
-      this.randomdog =
-        response.message[Math.floor(Math.random() * response.message.length)];
+      this.randomdog = response.message;
     });
   }
+
+  // ngOnInit() {
+  //   this.randomdogService.listRandomdog().forEach((response: any) => {
+  //     console.log(response.message);
+  //     this.randomdog =
+  //       response.message[Math.floor(Math.random() * response.message.length)];
+  //   });
+  // }
 }
