@@ -6,33 +6,34 @@ p, div {
   font-size: 17px;
   color: rgb(77, 77, 77);
   text-align: center;
-  margin-top: 50px 50px 0 50px;
-  padding: 50px 50px 0 50px;
+  width: 90%;
+  margin-top: 50px;
 }
 
 
 
 .sociallink {
   font-size: 15px;
-  width: 300px;
-  height: 170px;
+  width: 20em;
+  height: 130px;
   border: 2px solid silver;
   border-radius: 15px;
   padding: 0;
   margin-top: 30px;
+  background-color: rgba(192, 192, 192, 0.336);
   /* filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.9)); */
 }
 
 
 
 img {
-  width: 55px;
+  width: 3em;
   padding-bottom: 10px;
   padding-top: 10px;
 }
 
 a>p {
-  padding: 10px;
+  padding: 5px;
   margin: 0;
 }
 
@@ -44,14 +45,3 @@ a {
 a:hover {
   color: hsl(212, 94%, 40%);
 }
-
-/* p, div {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 21px;
-  color: black;
-}
-
-div {
-  padding: 10px;
-  margin: 30px;
-} */

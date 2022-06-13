@@ -22,16 +22,18 @@ input, textarea {
 
 }
 
-label, input, textarea {
-  width: 90%;
-  text-align: left;
-  margin: 10px;
+input {
+  height: 2em;
 }
 
-
+label, input, textarea {
+  width: 70%;
+  text-align: left;
+  margin: 10px;
+  margin-right: 3em;
+}
 
 textarea {
-
   height: 200px;
 }
 
