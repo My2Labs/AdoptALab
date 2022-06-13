@@ -21,6 +21,10 @@ p, div {
   padding: 10px;
 }
 
+.searchbar {
+  width: 400px;
+}
+
 input {
   padding: 5px;
 }
