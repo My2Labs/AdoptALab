@@ -4,7 +4,7 @@
   background-image: url("../../../assets/pawprints.png");
   background-size: 500px 86px;
   background-repeat: repeat;
-  font-family: Arial;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 86px;
   padding: 0;
   border-top: 5px solid gray;
@@ -78,8 +78,7 @@ li {
 nav:link,
 a:link {
   text-decoration: none;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 span {

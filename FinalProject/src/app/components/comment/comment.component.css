@@ -39,7 +39,7 @@ p {
   display: block;
   justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   color: rgb(77, 77, 77);
   text-align: center;
 }
@@ -48,7 +48,7 @@ div {
   display: block;
   justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   color: rgb(77, 77, 77);
   text-align: center;
 }
@@ -65,7 +65,7 @@ img {
 
 .comment-submitted {
   display: block;
-  padding: 20px;
+  padding: 17px;
   margin-bottom: 100px;
 }
 

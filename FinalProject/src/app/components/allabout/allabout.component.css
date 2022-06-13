@@ -2,7 +2,7 @@ p, div {
   display: block;
   justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 21px;
+  font-size: 17px;
   color: rgb(77, 77, 77);
   text-align: center;
   margin-top: 50px 50px 0 50px;
@@ -27,7 +27,7 @@ a {
 
 a:hover {
   color: hsl(212, 94%, 40%);
-  filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.9));
+  /* filter: drop-shadow(0 0.7rem 1rem rgba(62, 50, 241, 0.9)); */
 
 }
 

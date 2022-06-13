@@ -1,6 +1,6 @@
 h2 {
   font-family: 'Italianno', cursive;
-  font-size: 70px;
+  font-size: 50px;
   color: black;
   text-align: center;
   margin-top: 20px;
@@ -9,7 +9,7 @@ h2 {
 
 p, div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 21px;
+  font-size: 17px;
   color: black;
 }
 
