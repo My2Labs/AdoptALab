@@ -1,5 +1,5 @@
 
-<div *ngIf="labradors.length; else empty" class="gridlayout1">
+<div *ngIf="labradors.length; else empty" class="search-results">
   <li *ngFor="let labrador of labradors">
     <img *ngIf="labrador.imageUrl"src="{{labrador.imageUrl}}" alt="{{labrador.name}}" />
     <h3 class="name">{{labrador.name}}</h3>

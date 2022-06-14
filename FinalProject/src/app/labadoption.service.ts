@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
-import { SearchformComponent } from './components/searchform/searchform.component';
+import { SearchformComponent } from './components/search-form/searchform.component';
 
 export type Labrador = {
   name: string;

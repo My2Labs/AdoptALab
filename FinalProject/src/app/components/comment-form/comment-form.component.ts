@@ -20,10 +20,11 @@ export class CommentFormComponent implements OnInit {
       name: newComment.name,
       email: newComment.email,
     };
+
     this.commentService.addComment(comment).subscribe((response) => {
       console.log(response.comment);
       this.comments = [...this.comments, response.comment];
-    });
+    };
     console.log(newComment);
   }
 }

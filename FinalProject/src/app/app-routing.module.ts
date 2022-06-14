@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainpageComponent } from './components/mainpage/mainpage.component';
+import { MainpageComponent } from './components/main-page/mainpage.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { AdoptionComponent } from './components/adoption/adoption.component';
-import { ErrorpageComponent } from './components/errorpage/errorpage.component';
-import { SearchresultsComponent } from './components/searchresults/searchresults.component';
+import { ErrorpageComponent } from './components/error-page/errorpage.component';
+import { SearchresultsComponent } from './components/search-results/searchresults.component';
 import { AllaboutComponent } from './components/allabout/allabout.component';
 import { CommentComponent } from './components/comment/comment.component';
 

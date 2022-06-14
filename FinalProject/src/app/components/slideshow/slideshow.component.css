@@ -1,12 +1,4 @@
-/* .photocarousel ul {
-  display: flex;
-  flex-flow: row nowrap;
-  overflow-x: auto
-} */
-
-
-
-.container {
+.carousel-container {
   display: grid;
   grid-template-columns: 70% 30%;
   justify-items: center;
@@ -53,7 +45,7 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
+  .carousel-container {
     display: block;
     justify-items: center;
     align-items: center;

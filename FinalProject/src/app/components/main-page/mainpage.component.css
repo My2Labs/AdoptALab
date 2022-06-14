@@ -59,18 +59,7 @@ a>img {
 
 }
 
-.gridlayout1 {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 50% 40%;
-  justify-items: center;
-  align-items: center;
-  padding: 10px;
-  margin: 30px;
-  gap: 10px;
-}
-
-.gridlayout2 {
+.akc-section {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 30% 70%;
@@ -147,18 +136,7 @@ a>img {
     padding: 10px;
   }
 
-  .gridlayout1 {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 100%;
-    justify-items: center;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    gap: 10px;
-  }
-
-  .gridlayout2 {
+  .akc-section {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 100%;

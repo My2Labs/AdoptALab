@@ -1,4 +1,4 @@
-.gridlayout1 {
+.comment-section {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 60% 40%;
@@ -80,10 +80,11 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  filter: saturate(150%);
   border: 2px solid silver;
   background-color: rgb(247, 244, 241);
   filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.9));
+  filter: brightness(100%);
+  filter: grayscale(130%);
 }
 
 .comment-input {
@@ -96,7 +97,7 @@ img {
 }
 
 @media screen and (max-width: 775px) {
-  .gridlayout1 {
+  .comment-section {
     grid-template-rows: auto;
     grid-template-columns: 95%;
   }
