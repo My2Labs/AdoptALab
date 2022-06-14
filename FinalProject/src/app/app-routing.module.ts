@@ -21,7 +21,8 @@ const routes: Routes = [
     path: 'Adoption',
     component: AdoptionComponent,
   },
-
+  { path: 'create', component: ErrorpageComponent },
+  { path: 'edit/:postID', component: ErrorpageComponent },
   {
     path: 'Newsletter',
     component: NewsletterComponent,
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'results',
     component: SearchresultsComponent,
+  },
+  {
+    path: '**',
+    component: ErrorpageComponent,
   },
 ];
 
