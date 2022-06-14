@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RandomdogService } from '../../randomdog.service';
-import { CommentsService } from '../../comments.service';
-import { Input } from '@angular/core';
+import { CommentsService } from 'src/app/comments.service';
 import { Comment } from '../models/Comments';
 
 @Component({
@@ -10,10 +9,8 @@ import { Comment } from '../models/Comments';
   styleUrls: ['./comment.component.css'],
 })
 export class CommentComponent implements OnInit {
-  @Input() comments: Comment[] = [];
-
-  [x: string]: any;
   postComment: string[] = [];
+  comments: Comment[] = [];
   name = '';
   email = '';
   comment = '';
@@ -23,18 +20,22 @@ export class CommentComponent implements OnInit {
     this.postComment.push(this.comment);
   }
 
-  addComment(newComment: Comment) {
-    // Emit event
-  }
-
-  constructor(private randomdogService: RandomdogService) {}
+  constructor(
+    private randomdogService: RandomdogService,
+    private commentService: CommentsService
+  ) {}
 
   ngOnInit() {
     this.randomdogService.listRandomdog().forEach((response: any) => {
       console.log(response.message);
       this.randomdog = response.message;
     });
+    this.commentService.fetchComments().subscribe((theresponse: any) => {
+      console.log(theresponse.comments);
+      this.comments = theresponse.comments;
+    });
   }
+
   // SAVING TO WORK ON AFTER CAPSTONE.
   // ngOnInit() {
   //   this.randomdogService.listRandomdog().forEach((response: any) => {
