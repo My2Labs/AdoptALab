@@ -54,7 +54,7 @@ p {
 }
 
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 1024px) {
   .gridlayout1 {
     grid-template-rows: auto;
     grid-template-columns: 100%;
