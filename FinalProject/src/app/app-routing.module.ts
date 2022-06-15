@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainpageComponent } from './components/main-page/mainpage.component';
-import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { AdoptionComponent } from './components/adoption/adoption.component';
 import { ErrorpageComponent } from './components/error-page/errorpage.component';
 import { SearchresultsComponent } from './components/search-results/searchresults.component';
@@ -23,10 +22,7 @@ const routes: Routes = [
   },
   { path: 'create', component: ErrorpageComponent },
   { path: 'edit/:postID', component: ErrorpageComponent },
-  {
-    path: 'Newsletter',
-    component: NewsletterComponent,
-  },
+
   {
     path: 'Comment',
     component: CommentComponent,
