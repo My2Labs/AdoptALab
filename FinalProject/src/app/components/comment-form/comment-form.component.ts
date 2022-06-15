@@ -14,11 +14,10 @@ export class CommentFormComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  // addComment(newComment: Comment) {
-  //   this.commentService.addComment(newComment).subscribe((response) => {
-  //     console.log(response.comment);
-  //     this.comments = [...this.comments, response.comment];
-  //   });
-  //   console.log(newComment);
-  // }
+  addComment(comments: Comment) {
+    this.commentService.findAll().subscribe((comments: Comment[]) => {
+      this.comments = comments;
+    });
+    console.log(comments);
+  }
 }

@@ -34,6 +34,7 @@ import { AllaboutComponent } from './components/allabout/allabout.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';
 import { CommentListComponent } from './components/comment-list/comment-list.component';
+import { CommentsService } from './comments.service';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import { CommentListComponent } from './components/comment-list/comment-list.com
     HttpClientModule,
   ],
   providers: [
+    [CommentsService],
     {
       provide: GALLERY_CONFIG,
       useValue: {

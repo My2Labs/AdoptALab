@@ -15,6 +15,7 @@ type CommentResponse = {
 })
 export class CommentsService {
   comments: Comment[] = [];
+  findAll: any;
 
   constructor(private http: HttpClient) {}
 
