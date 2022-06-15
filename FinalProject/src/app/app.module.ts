@@ -12,7 +12,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PortraitsComponent } from './components/portraits/portraits.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -44,7 +43,6 @@ import { CommentsService } from './comments.service';
     MainpageComponent,
     VideosComponent,
     NewsletterComponent,
-    PortraitsComponent,
     SlideshowComponent,
     CoverphotoComponent,
     FooterdataComponent,
