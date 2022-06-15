@@ -1,10 +1,25 @@
 
 <div>
 <form #deleteCommentForm="ngForm" class="delete-form" (ngSubmit)="deleteComment(deleteCommentForm.value)">
-  <label for="id">ID</label>
+  <label for="id">id</label>
   <input type="text" id="id" name="id" placeholder="id" ngModel>
 
   <input class="button" type="submit" value="Remove Comment">
+
+</form>
+</div>
+<div>
+<form #editCommentForm="ngForm" class="edit-form" (ngSubmit)="updateComment(editCommentForm.value)">
+  <label for="id">Id:</label>
+  <input type="text" id="id" name="id" placeholder="id" ngModel>
+
+  <label for="name">Name</label>
+  <input type="text" id="name" placeholder="name" name="name" ngModel>
+
+  <label for="comment">Comment</label>
+  <input type="text" id="comment" placeholder="comment" name="comment" ngModel>
+
+  <input class="button" type="submit" value="Update Comment">
 
 </form>
 </div>

@@ -35,4 +35,10 @@ export class CommentsService {
   deleteComment(comment: Comment) {
     return this.http.delete(`${environment.commentsEndpoint}/${comment.id}`);
   }
+  updateComment(comment: Comment) {
+    return this.http.put<CommentResponse>(
+      `${environment.commentsEndpoint}/${comment.id}`,
+      comment
+    );
+  }
 }

@@ -3,9 +3,14 @@ p, div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: rgb(77, 77, 77);
+  font-weight: 800;
   margin: 20px;
 }
 
 p {
   text-align: left;
+}
+
+.return {
+  font-weight: 100;
 }

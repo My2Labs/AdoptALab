@@ -26,8 +26,8 @@ input {
 }
 
 label, input {
-  width: 70%;
-  text-align: left;
+  width: 30%;
+  text-align: center;
   margin: 10px;
   margin-right: 3em;
 }

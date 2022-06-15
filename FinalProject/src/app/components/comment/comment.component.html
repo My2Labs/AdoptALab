@@ -1,21 +1,25 @@
 <h2>Leave us a comment!</h2>
-
-<div class="comment-section">
-  <div class="random-dog">
-    <img src="{{ randomdog }}" alt="Dog Picture" />
+<div class = "comment-page">
+  <div class="comment-section">
+    <div class="random-dog">
+      <img src="{{ randomdog }}" alt="Dog Picture" />
+    </div>
   </div>
-
+<div class="form-comment">
+    <app-comment-form class="comment-form"></app-comment-form>
+</div>
+<div>
+  <h3>Comments:</h3>
+  <div class="comment-return" *ngFor="let comment of comments">
+  <app-comment-list
+  [name]="comment.name"
+  [comment]="comment.comment"
+  ></app-comment-list></div>
+</div>
 </div>
 
 
 
-
-<app-comment-form class="comment-form"></app-comment-form>
-<h3>Comments:</h3>
-<div class="comment-return" *ngFor="let comment of comments">
-<app-comment-list
-[name]="comment.name"
-[comment]="comment.comment"
-></app-comment-list></div>
-<app-remove-comment></app-remove-comment>
-
+<div class="hidden">
+  <app-remove-comment></app-remove-comment>
+  </div>
