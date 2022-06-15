@@ -1,7 +1,7 @@
 .comment-section {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 100%;
   justify-items: center;
   align-items: center;
 }
@@ -27,7 +27,7 @@ input {
 }
 
 label, input, textarea {
-  width: 70%;
+  width: 100%;
   text-align: left;
   margin: 10px;
   margin-right: 3em;
@@ -56,7 +56,7 @@ div {
 }
 
 img {
-  width: 70%;
+  width: 100px;
   grid-column: 1 / span 1;
   grid-row: 1 / span 4;
   justify-self: center;
@@ -79,7 +79,7 @@ img {
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 50%;
   border: 2px solid silver;
   background-color: rgb(247, 244, 241);
   filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.9));
@@ -89,11 +89,35 @@ img {
 
 .comment-input {
   width: 100%;
-  justify-self: left;
-  align-self: left;
-  justify-content: left;
-  align-content: left;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
 
+}
+
+.comment-form {
+  display: block;
+  grid-template-columns: auto;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.comment-return {
+  display: grid;
+  grid-template-columns: auto;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 775px) {

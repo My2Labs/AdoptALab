@@ -34,6 +34,7 @@ import { CommentComponent } from './components/comment/comment.component';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';
 import { CommentListComponent } from './components/comment-list/comment-list.component';
 import { CommentsService } from './comments.service';
+import { RemoveCommentComponent } from './components/remove-comment/remove-comment.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { CommentsService } from './comments.service';
     CommentComponent,
     CommentFormComponent,
     CommentListComponent,
+    RemoveCommentComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-.new-comment-form {
+.delete-form {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 100%;
@@ -7,10 +7,6 @@
   width: 100%;
 }
 
-.form-comment {
-  display: block;
-  width: 100%;
-}
 
 form {
   width: 50%;
@@ -26,10 +22,14 @@ input {
 }
 
 label, input {
-  width: 70%;
-  text-align: left;
+  width: 20%;
+  text-align: center;
   margin: 10px;
   margin-right: 3em;
+}
+
+label {
+  display: none;
 }
 
 p {
@@ -50,26 +50,13 @@ div {
   text-align: center;
 }
 
-.comment-section {
-  height: 4em;
-  text-align: start;
-}
 
-.comment-button {
-  width: 8em;
+.button {
+  width: 10em;
   text-align: center;
 }
 
-.comment-button:hover {
+.button:hover {
   color: white;
   background-color: hsl(212, 94%, 40%);
-}
-
-@media screen and (max-width: 775px) {
-  .new-comment-form {
-    grid-template-rows: auto;
-    grid-template-columns: 100%;
-    width: 100%;
-  }
-
 }

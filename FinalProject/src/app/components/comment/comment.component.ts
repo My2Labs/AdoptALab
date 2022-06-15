@@ -10,7 +10,7 @@ import { Comment } from '../models/Comments';
 })
 export class CommentComponent implements OnInit {
   postComment: string[] = [];
-  comments: Comment[] = [];
+  comments: any;
   name = '';
   email = '';
   comment = '';

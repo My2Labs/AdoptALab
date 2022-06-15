@@ -1,16 +1,5 @@
-  <div>
-  <ul>
-    <li *ngFor="let comment of comments">
-      <p>
-        [name]={{comment.name}}
-        [email]={{comment.email}}
-        [comment]={{comment.comment}}
 
-      </p>
-    </li>
-  </ul>
-  </div>
-  <div>
+<div class="form-comment">
 <form #newCommentForm="ngForm" class="new-comment-form" (ngSubmit)="addComment(newCommentForm.value)">
   <label for="name">Name</label>
   <input type="text" name="name" required id="name" ngModel>

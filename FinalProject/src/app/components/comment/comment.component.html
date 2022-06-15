@@ -4,34 +4,18 @@
   <div class="random-dog">
     <img src="{{ randomdog }}" alt="Dog Picture" />
   </div>
-  <div class="comment-input">
-    <div class="input-name">
-    <p><label for="name">Name</label></p>
-    <input type="text" id="name" name="name" ngModel>
-    </div>
-    <div class="input-email">
-    <p><label for="email">Email</label></p>
-    <input type="text" id="email" name="email" ngModel>
-    </div>
-    <div class="input-comment">
-    <p><label for="comment">Comment</label></p>
-    <textarea [(ngModel)]="comment"></textarea>
-    </div>
-    <div class="input-submit">
-    <button (click)="post()">Submit Comment</button>
-    </div>
-  </div>
+
 </div>
 
-<h3>Comments:</h3>
-  <div *ngFor="let comments of postComment" class="comment-submitted">
-    <p>{{comments}}</p>
-  </div>
-  <p>This site is pawsome!</p>
 
-<app-comment-form></app-comment-form>
-<div *ngFor="let comment of comments">
+
+
+<app-comment-form class="comment-form"></app-comment-form>
+<h3>Comments:</h3>
+<div class="comment-return" *ngFor="let comment of comments">
 <app-comment-list
-[name]="name"
-[email]="email"
+[name]="comment.name"
+[comment]="comment.comment"
 ></app-comment-list></div>
+<app-remove-comment></app-remove-comment>
+
