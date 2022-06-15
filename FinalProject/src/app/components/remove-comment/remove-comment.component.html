@@ -5,9 +5,9 @@
   <input type="text" id="id" name="id" placeholder="id" ngModel>
 
   <input class="button" type="submit" value="Remove Comment">
-
 </form>
 </div>
+
 <div>
 <form #editCommentForm="ngForm" class="edit-form" (ngSubmit)="updateComment(editCommentForm.value)">
   <label for="id">Id:</label>

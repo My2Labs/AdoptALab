@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RandomdogService } from '../../randomdog.service';
 import { CommentsService } from 'src/app/comments.service';
-import { Comment } from '../models/Comments';
 
 @Component({
   selector: 'app-comment',
@@ -35,13 +34,4 @@ export class CommentComponent implements OnInit {
       this.comments = theresponse.comments;
     });
   }
-
-  // SAVING TO WORK ON AFTER CAPSTONE.
-  // ngOnInit() {
-  //   this.randomdogService.listRandomdog().forEach((response: any) => {
-  //     console.log(response.message);
-  //     this.randomdog =
-  //       response.message[Math.floor(Math.random() * response.message.length)];
-  //   });
-  // }
 }

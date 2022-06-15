@@ -6,8 +6,6 @@ import { Comment } from '../models/Comments';
   selector: 'app-remove-comment',
   templateUrl: './remove-comment.component.html',
   styleUrls: ['./remove-comment.component.css'],
-
-  template: ` Id: <input type="text" [(ngModel)]="id" /> `,
 })
 export class RemoveCommentComponent implements OnInit {
   comments: any;

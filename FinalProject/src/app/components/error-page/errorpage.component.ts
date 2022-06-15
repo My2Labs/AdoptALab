@@ -21,17 +21,3 @@ export class ErrorpageComponent implements OnInit {
     this.router.navigate(['/']);
   }
 }
-
-// export class ErrorpageComponent implements OnInit {
-//   router: Router;
-
-//   constructor(router: Router) {
-//     this.router = router;
-//   }
-
-//   ngOnInit(): void {}
-
-//   onClick() {
-//     this.router.navigate(['/']);
-//   }
-// }

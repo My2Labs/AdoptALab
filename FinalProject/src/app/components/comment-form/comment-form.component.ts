@@ -13,12 +13,6 @@ const comment = {
   selector: 'app-comment-form',
   templateUrl: './comment-form.component.html',
   styleUrls: ['./comment-form.component.css'],
-
-  template: `
-    Name: <input type="text" [(ngModel)]="name" /> Email:
-    <input type="text" [(ngModel)]="email" /> Comment:
-    <input type="text" [(ngModel)]="comment" />
-  `,
 })
 export class CommentFormComponent implements OnInit {
   comments: any;

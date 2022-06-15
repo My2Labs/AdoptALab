@@ -16,6 +16,5 @@ export class CommentListComponent implements OnInit {
 
   ngAfterViewInit() {
     return this.name, this.email, this.comment;
-    console.log(this.name, this.comment);
   }
 }

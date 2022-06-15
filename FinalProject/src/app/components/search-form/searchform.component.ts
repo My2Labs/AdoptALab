@@ -8,13 +8,6 @@ import { Input } from '@angular/core';
   styleUrls: ['./searchform.component.css'],
 })
 export class SearchformComponent {
-  @Input() name!: string;
-  @Input() age!: string;
-  @Input() city!: string;
-  @Input() state!: string;
-  @Input() breed!: string;
-  @Input() sex!: string;
-
   constructor(private router: Router) {}
 
   searchDogs({ searchTerm }: { searchTerm: string }) {

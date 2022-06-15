@@ -29,7 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ErrorpageComponent } from './components/error-page/errorpage.component';
 import { SearchformComponent } from './components/search-form/searchform.component';
 import { SearchresultsComponent } from './components/search-results/searchresults.component';
-import { AllaboutComponent } from './components/allabout/allabout.component';
+import { AllaboutComponent } from './components/all-about/allabout.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';
 import { CommentListComponent } from './components/comment-list/comment-list.component';
