@@ -8,9 +8,9 @@
 <div class="form-comment">
     <app-comment-form class="comment-form"></app-comment-form>
 </div>
-<div>
+<div class="comment-return">
   <h3>Comments:</h3>
-  <div class="comment-return" *ngFor="let comment of comments">
+  <div *ngFor="let comment of comments">
   <app-comment-list
   [name]="comment.name"
   [comment]="comment.comment"

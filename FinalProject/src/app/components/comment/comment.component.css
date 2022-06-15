@@ -78,19 +78,6 @@ img {
 
 .comment-form {
   display: block;
-  grid-template-columns: auto;
-  width: 100%;
-  justify-self: center;
-  align-self: center;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.comment-return {
-  display: grid;
-  grid-template-columns: auto;
   width: 100%;
   justify-self: center;
   align-self: center;
@@ -103,13 +90,26 @@ img {
 .comment-page {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 100%;
+  grid-template-columns: 50% 50%;
+}
+
+.comment-return {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 30px;
+
 }
 
 .comment-section {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 100%;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
   justify-items: center;
   align-items: center;
 }
@@ -120,12 +120,15 @@ img {
 }
 
 .form-comment {
-  margin-top: 100px;
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  width: 100%;
+  margin-top: 10px;
 }
 
 
 @media screen and (max-width: 775px) {
-  .comment-section {
+  .comment-page {
     grid-template-rows: auto;
     grid-template-columns: 95%;
   }
