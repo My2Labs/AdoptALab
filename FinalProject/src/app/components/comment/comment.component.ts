@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RandomdogService } from '../../randomdog.service';
 import { CommentsService } from 'src/app/comments.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-comment',
@@ -21,8 +22,13 @@ export class CommentComponent implements OnInit {
 
   constructor(
     private randomdogService: RandomdogService,
-    private commentService: CommentsService
+    private commentService: CommentsService,
+    private router: Router
   ) {}
+
+  // getNewComment(comment: Comment) {
+  //   this.router.navigate(['/Comment']);
+  // }
 
   ngOnInit() {
     this.randomdogService.listRandomdog().forEach((response: any) => {

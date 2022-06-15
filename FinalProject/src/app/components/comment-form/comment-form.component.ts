@@ -22,18 +22,23 @@ export class CommentFormComponent implements OnInit {
     email: '',
     comment: '',
   };
-  router: any;
 
-  constructor(private commentService: CommentsService) {}
+  constructor(
+    private commentService: CommentsService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {}
 
-  getNewComment(comment: Comment) {
-    this.router.navigate(['/comments']);
+  getNewComment() {
+    this.router.navigateByUrl('/Comment');
   }
 
   addComment(newComment: Comment) {
-    this.commentService.addComment(newComment).subscribe((response) => {});
+    this.commentService.addComment(newComment).subscribe((response) => {
+      window.location.reload();
+    });
+
     console.log(newComment.name, newComment.comment);
   }
 
