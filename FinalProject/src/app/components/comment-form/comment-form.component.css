@@ -60,7 +60,7 @@ div {
 }
 
 .comment-button {
-  width: 100px;
+  width: auto;
   text-align: center;
   color: rgb(58, 58, 58);
 }
