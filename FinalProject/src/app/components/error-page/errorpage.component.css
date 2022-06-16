@@ -7,16 +7,15 @@
 }
 
 img {
-  width: 80%;
+  width: 50%;
   height: auto;
 }
 
 p {
   display: block;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 50px;
-  color: rgb(77, 77, 77);
+  font-size: 30px;
+  color: black;
   margin-top: 100px;
-
-
+  font-weight: 100;
 }
