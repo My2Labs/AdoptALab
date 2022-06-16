@@ -1,10 +1,10 @@
 <div class="form-comment">
 <form #newCommentForm="ngForm" class="new-comment-form" (ngSubmit)="addComment(newCommentForm.value)">
   <label for="name">Name</label>
-  <input type="text" name="name" required id="name" ngModel>
+  <input type="text" class="name-section" name="name" required id="name" ngModel>
 
   <label for="email">Email</label>
-  <input type="text" id="email" required  minlength="6" maxlength="64" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" ngModel>
+  <input type="text" id="email" class="email-section" required  minlength="6" maxlength="64" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" ngModel>
 
   <label for="comment">Comment</label>
   <input type="text" class="comment-section" name="comment" id="comment" ngModel>

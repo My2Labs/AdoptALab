@@ -1,5 +1,10 @@
-p, div {
-  display: block;
+.returned-comments {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 15% 85%;
+  justify-items: left;
+  align-items: center;
+  text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: rgb(77, 77, 77);
@@ -7,10 +12,33 @@ p, div {
   margin: 20px;
 }
 
+
 p {
-  text-align: left;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: rgb(77, 77, 77);
+  font-weight: 800;
+  margin: 20px;
 }
 
 .return {
   font-weight: 100;
+}
+
+
+@media screen and (max-width: 820px) {
+  .returned-comments {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    justify-items: left;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: rgb(77, 77, 77);
+    font-weight: 800;
+    margin: 20px;
+  }
 }

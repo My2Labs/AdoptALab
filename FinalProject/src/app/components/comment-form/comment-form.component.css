@@ -15,6 +15,7 @@
 
 form {
   width: 50%;
+
 }
 
 
@@ -39,7 +40,6 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 17px;
   color: rgb(77, 77, 77);
-  text-align: center;
 }
 
 div {
@@ -48,17 +48,20 @@ div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 17px;
   color: rgb(77, 77, 77);
-  text-align: center;
 }
 
 .comment-section {
-  height: 4em;
-  text-align: start;
+  height: 5em;
+  text-align: left;
+}
+
+.name-section, .email-section {
+  text-align: left;
 }
 
 .comment-button {
   width: 8em;
-  text-align: center;
+  text-align: left;
 }
 
 .comment-button:hover {
