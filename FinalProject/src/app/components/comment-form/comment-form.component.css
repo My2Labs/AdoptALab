@@ -60,13 +60,13 @@ div {
 }
 
 .comment-button {
-  width: auto;
-  text-align: left;
+  width: 100px;
+  text-align: center;
   color: rgb(58, 58, 58);
 }
 
 .comment-button:hover {
-  color: black;
+  color: white;
   background-color: hsl(212, 94%, 40%);
 }
 
