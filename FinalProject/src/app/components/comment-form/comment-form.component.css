@@ -60,9 +60,9 @@ div {
 }
 
 .comment-button {
-  width: 8em;
+  width: auto;
   text-align: left;
-  color: black;
+  color: rgb(58, 58, 58);
 }
 
 .comment-button:hover {
