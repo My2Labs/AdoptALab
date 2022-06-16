@@ -54,8 +54,8 @@ p {
 }
 
 
-@media screen and (max-width: 1024px) {
-  .gridlayout1 {
+@media screen and (max-width: 1035px) {
+  .adoption {
     grid-template-rows: auto;
     grid-template-columns: 100%;
   }

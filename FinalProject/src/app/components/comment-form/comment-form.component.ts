@@ -43,6 +43,8 @@ export class CommentFormComponent implements OnInit {
   }
 
   deleteComment(comment: Comment) {
-    this.commentService.deleteComment(comment).subscribe((response) => {});
+    this.commentService.deleteComment(comment).subscribe((response) => {
+      window.location.reload();
+    });
   }
 }

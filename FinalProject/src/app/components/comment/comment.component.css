@@ -115,7 +115,7 @@ img {
 }
 
 .hidden {
-
+  display: none;
   margin-top: 500px;
 }
 
@@ -130,7 +130,33 @@ img {
 @media screen and (max-width: 775px) {
   .comment-page {
     grid-template-rows: auto;
-    grid-template-columns: 95%;
+    grid-template-columns: 100%;
+  }
+
+  .comment-return {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+  }
+
+  .comment-section {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .form-comment {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    width: 100%;
+    margin-top: 10px;
   }
 
   input, textarea {
@@ -149,6 +175,15 @@ img {
     margin-top: 100px;
   }
 
+  img {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid silver;
+    background-color: rgb(247, 244, 241);
+    filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.9));
+  }
 
   textarea {
     width: 100%;
