@@ -2,7 +2,9 @@
   <form #searchForm="ngForm" class="searchformdiv" (ngSubmit)="searchDogs(searchForm.value)">
     <label for="search-term">Search Labradors</label>
     <input id="search-term" name="searchTerm" type="search-term" placeholder="Name, City, State Abbreviation, Color, Sex.." class="searchbar" ngModel/>
-    <input type="submit" value="Search" />
+    <div>
+    <input type="submit" class="search-button" value="Search" />
+    </div>
   </form>
   </div>
   <router-outlet></router-outlet>

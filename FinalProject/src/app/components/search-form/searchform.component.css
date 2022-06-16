@@ -22,7 +22,7 @@ p, div {
 }
 
 .searchbar {
-  width: 15rem;
+  width: 17rem;
 }
 
 input {
@@ -31,4 +31,15 @@ input {
 
 label {
   display: none;
+}
+
+.search-button {
+  width: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.search-button:hover {
+  color: white;
+  background-color: hsl(212, 94%, 40%);
 }
