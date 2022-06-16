@@ -42,6 +42,17 @@ img {
   filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.9));
 }
 
+.jump {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  filter: saturate(150%);
+  border: 2px solid silver;
+  background-color: rgb(247, 244, 241);
+  filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.9));
+}
+
 a {
   color: lavender;
 }
