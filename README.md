@@ -2,7 +2,7 @@
 
 ## Deployed Site: https://master--sharron-hemenway.netlify.app/
 
-Comments Repository:  https://github.com/My2Labs/comments
+Comments Repository:  https://github.com/My2Labs/comments - 
 Lab Adoption Repository:  https://github.com/My2Labs/adopt-a-lab
 
 The intended use of this site is to promote the adoption of and to assist a user with locating a Labrador Retriever available for adoption. It offers a service to connect breeders and non-breeders with potential users looking to adopt a Labrador Retriever. It also offers resources in the comparison of breeds and available Labrador Retrievers for purchase that are registered with the American Kennel Club.
