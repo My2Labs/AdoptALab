@@ -2,7 +2,7 @@
 
 ## Deployed Site: https://master--sharron-hemenway.netlify.app/
 
-## Preview: https://www.loom.com/share/192b2fd5dfa04ee2a524b638a07d1fda
+## Preview: https://www.loom.com/share/e4718e25652f4079a1b08a00b6a893c4
 
 Comments Repository:  https://github.com/My2Labs/comments - 
 Lab Adoption Repository:  https://github.com/My2Labs/adopt-a-lab
