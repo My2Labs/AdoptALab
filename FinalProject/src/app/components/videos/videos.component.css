@@ -16,6 +16,11 @@ h3 {
   text-align: center;
   padding-top: 2rem;
   margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+iframe {
+  margin: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -24,6 +29,7 @@ h3 {
     border: 2px solid white;
     height: 30rem;
   }
+
 
 
 }
